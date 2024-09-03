@@ -37,6 +37,6 @@ leistungstest2023 <- leistungstests %>%
   labs(title = "Leistung im Verhältnis zur Sauerstoffaufnahme (% VO2Max)")
 
 finalise_plot(plot_name = leistungstest2023,
-              source = "Quelle: Messung vom 7. 11. 2023, High Performance Coaching Clemens Rumpel, St. Pölten",
+              source = "Quelle: Messung vom 7. 11. 2023, High Performance Coaching Clemens Rumpl, St. Pölten",
               width_pixels = 800,
               save_filepath = "output/leistungstest2023.jpg")
