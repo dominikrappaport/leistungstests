@@ -129,7 +129,7 @@ wattvergleich.cyclus2 <- read_csv("data/processed/wattvergleich/Cyclus 2.csv", c
 wattvergleich.favero <- read_csv("data/processed/wattvergleich/Favero Assioma Duo.csv", col_types = cols_only("Type" = col_character(), "Message" = col_character(), "Value 1" = col_integer(), "Value 4" = col_integer())) %>%
   mutate(Source = "Favero Assioma Duo", Timestamp = `Value 1`, Watt = `Value 4`) %>%
   select(Timestamp, Type, Message, Watt, Source) %>%
-  filter(Timestamp >= 1096705521, Type == "Data", Message == "record") %>%
+  filter(Timestamp >= 1096705521, Type == "Data", Message == "record", Watt > 0) %>%
   mutate(Timestamp = as_datetime(Timestamp + 631065600, tz = "Europe/Vienna"))
 
 wattvergleich.laps <- read_csv("data/processed/wattvergleich/Laps.csv") %>%
@@ -155,12 +155,12 @@ wattvergleich %>%
 wattvergleich <- wattvergleich.cyclus2 %>% 
   inner_join(wattvergleich.favero, by=join_by(Timestamp)) %>%
   inner_join(wattvergleich.laps, by=join_by(Timestamp)) %>%
-  filter(Watt.x > 0) %>%
+  filter(Watt.x > 0, RelTime > 10) %>%
   mutate(vergleich = Watt.y - Watt.x) %>%
   group_by(Lap, Watt.x) %>%
   summarise(vergleich.mittel = mean(vergleich)) %>%
-  mutate(Watt.Cyclus2 = Watt.x, Watt.FaveroAssioma = Watt.x + vergleich.mittel, Watt.abweichung = abs(vergleich.mittel)/Watt.x) %>%
-  select(Lap, Watt.Cyclus2, Watt.FaveroAssioma, Watt.abweichung)
+  mutate(Watt.Cyclus2 = Watt.x, Watt.FaveroAssioma = Watt.x + vergleich.mittel, Watt.abweichung = vergleich.mittel, Watt.abweichung.relativ = abs(vergleich.mittel)/Watt.x) %>%
+  select(Lap, Watt.Cyclus2, Watt.FaveroAssioma, Watt.abweichung, Watt.abweichung.relativ)
 
 wattvergleich.diagram <- wattvergleich %>%
   select(Lap, Watt.Cyclus2, Watt.FaveroAssioma) %>%
@@ -183,7 +183,7 @@ finalise_plot(plot_name = wattvergleich.diagram,
               save_filepath = "output/leistungstest2024_wattvergleich.jpg")
 
 wattvergleich.diagram <- wattvergleich %>%
-  ggplot(aes(x=Lap, y=Watt.abweichung)) +
+  ggplot(aes(x=Lap, y=Watt.abweichung.relativ)) +
   geom_line(linewidth = 1, colour = "#1380A1") +
   geom_hline(yintercept = 0,
              linewidth = 1,
