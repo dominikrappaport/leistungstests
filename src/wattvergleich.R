@@ -110,7 +110,7 @@ wattvergleich.diagram <- wattvergleich %>%
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 55, 9, 0)) +
   labs(title = "Vergleich Wattmessung Cyclus 2 und Favero Assioma Duo", subtitle =
-         "Messung vom 01. 10. 2024")
+         "Messung vom 01. 10. 2024 bei einer mittleren Trittfrequenz von 90 rpm")
 
 finalise_plot(
   plot_name = wattvergleich.diagram,
