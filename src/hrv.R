@@ -1,4 +1,8 @@
 
+# Import specific libraries -----------------------------------------------
+
+pacman::p_load("ggiraph")
+
 # Read from files ---------------------------------------------------------
 
 hrv.garmin <- read_csv("data/processed/hrv/garmin.csv")
@@ -31,8 +35,9 @@ hrv <- hrv %>%
 # Plot results ------------------------------------------------------------
 
 hrv.plot <- hrv %>%
-  ggplot(aes(x=date, y=hrv, colour=source)) +
-  geom_line(linewidth = 1) +
+  filter(source != "hrvVitalmonitor") %>%
+  ggplot(aes(x=date, y=hrv, colour=source, tooltip = source, data_id = source)) +
+  geom_line_interactive(linewidth = 1, hover_nearest = TRUE) +
   geom_hline(yintercept = 0,
              linewidth = 1,
              colour = "#333333") +
@@ -44,3 +49,8 @@ finalise_plot(plot_name = hrv.plot,
               source = "Quelle: Messung mit Garmin Fenix 6, Oura Ring und Vitalmonitor",
               width_pixels = 800,
               save_filepath = "output/hrv_vergleich.jpg")
+
+# Create interactive version of the plot ----------------------------------
+
+interactive.plot <- girafe(ggobj = hrv.plot)
+save_html(interactive.plot, "output/hrv-interactive.html")
