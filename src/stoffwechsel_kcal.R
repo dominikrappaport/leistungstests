@@ -11,7 +11,7 @@ stoffwechsel <- stoffwechsel %>%
 
 # Plot file ---------------------------------------------------------------
 
-stoffwechsel %>%
+stoffwechsel.plot <- stoffwechsel %>%
   ggplot(aes(x=Watt,y=Brennwert,colour=Nährstoff)) +
   geom_line(linewidth = 1) +
   geom_hline(yintercept = 0,
@@ -19,9 +19,13 @@ stoffwechsel %>%
              colour = "#333333") +
   scale_x_continuous(limits=c(60, 240), breaks=seq(60, 240, 20), labels=c(seq(60, 220, 20), "240 W")) +
   scale_y_continuous(limits=c(0, 800), breaks=seq(0, 800, 100), labels = label_number(suffix = " kcal")) +
-  scale_colour_manual(values = c("#FAAB18", "#1380A1"), labels = c("Fett", "Kohlenhydrate")) +
+  scale_colour_manual(values = c("#1380A1", "#FAAB18"), labels = c("Fett", "Kohlenhydrate")) +
   bbc_style() +
   labs(title = "Nährstoffverbrauch [kcal]") +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 20, 9, 0))
 
+finalise_plot(plot_name = stoffwechsel.plot,
+              source = "Quelle: High Performance Coaching Clemens Rumpl, St. Pölten",
+              width_pixels = 800,
+              save_filepath = "output/stoffwechsel2024_kcal.jpg")
