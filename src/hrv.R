@@ -1,7 +1,9 @@
 
-# Import specific libraries -----------------------------------------------
+# Load libraries ----------------------------------------------------------
 
-pacman::p_load("ggiraph")
+library("tidyverse")
+library("bbplot")
+library("scales")
 
 # Read from files ---------------------------------------------------------
 
@@ -12,45 +14,56 @@ hrv.vitalmonitor <- read_csv("data/processed/hrv/vitalmonitor.csv")
 # Adjust type and field names ---------------------------------------------
 
 hrv.garmin <- hrv.garmin %>%
-  mutate(date = as.Date(date, format = "%d.%m.%y"), hrvGarmin = HRV) %>%
+  mutate(date = as.Date(date, format = "%d.%m.%y"),
+         hrvGarmin = HRV) %>%
   select(date, hrvGarmin)
 hrv.oura <- hrv.oura %>%
   mutate(date = as.Date(date, format = "%Y-%m-%d"), hrvOura = `Average HRV`) %>%
   select(date, hrvOura)
 hrv.vitalmonitor <- hrv.vitalmonitor %>%
-  mutate(date = as.Date(date, format = "%Y-%m-%d"), hrvVitalmonitor = hrv) %>%
+  mutate(date = as.Date(date, format = "%Y-%m-%d"),
+         hrvVitalmonitor = hrv) %>%
   select(date, hrvVitalmonitor)
 
 # Join data ---------------------------------------------------------------
 
-hrv <- hrv.garmin %>% 
+hrv <- hrv.garmin %>%
   inner_join(hrv.oura, by = join_by(date)) %>%
   inner_join(hrv.vitalmonitor, by = join_by(date))
 
 # Make table longer -------------------------------------------------------
 
 hrv <- hrv %>%
-  pivot_longer(cols = c(hrvGarmin, hrvOura, hrvVitalmonitor), names_to = "source", values_to = "hrv")
+  pivot_longer(
+    cols = c(hrvGarmin, hrvOura, hrvVitalmonitor),
+    names_to = "source",
+    values_to = "hrv"
+  )
 
 # Plot results ------------------------------------------------------------
 
 hrv.plot <- hrv %>%
-  filter(source != "hrvVitalmonitor") %>%
-  ggplot(aes(x=date, y=hrv, colour=source, tooltip = source, data_id = source)) +
-  geom_line_interactive(linewidth = 1, hover_nearest = TRUE) +
+  ggplot(aes(
+    x = date,
+    y = hrv,
+    colour = source,
+    tooltip = source,
+    data_id = source
+  )) +
+  geom_line(linewidth = 1, hover_nearest = TRUE) +
   geom_hline(yintercept = 0,
              linewidth = 1,
              colour = "#333333") +
-  scale_colour_manual(values = c("#FAAB18", "#1380A1", "#990000"), labels = c("Garmin Fenix 6", "Oura Ring", "Vitalmonitor")) +
+  scale_colour_manual(
+    values = c("#FAAB18", "#1380A1", "#990000"),
+    labels = c("Garmin Fenix 6", "Oura Ring", "Vitalmonitor")
+  ) +
   bbc_style() +
   labs(title = "HRV-Vergleich")
 
-finalise_plot(plot_name = hrv.plot,
-              source = "Quelle: Messung mit Garmin Fenix 6, Oura Ring und Vitalmonitor",
-              width_pixels = 800,
-              save_filepath = "output/hrv_vergleich.jpg")
-
-# Create interactive version of the plot ----------------------------------
-
-interactive.plot <- girafe(ggobj = hrv.plot)
-save_html(interactive.plot, "output/hrv-interactive.html")
+finalise_plot(
+  plot_name = hrv.plot,
+  source = "Quelle: Messung mit Garmin Fenix 6, Oura Ring und Vitalmonitor",
+  width_pixels = 800,
+  save_filepath = "output/hrv_vergleich.jpg"
+)
