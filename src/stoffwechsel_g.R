@@ -7,13 +7,14 @@ library("scales")
 
 # Read file ---------------------------------------------------------------
 
-stoffwechsel <- read_csv("data/processed/stoffwechsel2024.csv")
+stoffwechsel <- read_csv("data/processed/stoffwechsel2024.csv") %>%
+  mutate(Summe = Fett + Kohlenhydrate)
 
 # Reformat table ----------------------------------------------------------
 
 stoffwechsel <- stoffwechsel %>%
   pivot_longer(
-    cols = Fett:Kohlenhydrate,
+    cols = c(Fett, Kohlenhydrate, Summe),
     names_to = "Nährstoff",
     values_to = "Menge"
   )
@@ -37,11 +38,11 @@ stoffwechsel.plot <- stoffwechsel %>%
     labels = label_number(suffix = " g")
   ) +
   scale_colour_manual(
-    values = c("#1380A1", "#FAAB18"),
-    labels = c("Fett", "Kohlenhydrate")
+    values = c("#1380A1", "#FAAB18", "#990000"),
+    labels = c("Fett", "Kohlenhydrate", "Summe")
   ) +
   bbc_style() +
-  labs(title = "Nährstoffverbrauch [g]") +
+  labs(title = "Nährstoffverbrauch pro Stunde [g]") +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 20, 9, 0))
 
@@ -49,5 +50,5 @@ finalise_plot(
   plot_name = stoffwechsel.plot,
   source = "Quelle: High Performance Coaching Clemens Rumpl, St. Pölten",
   width_pixels = 800,
-  save_filepath = "output/stoffwechsel2024_gramm.jpg"
+  save_filepath = "output/stoffwechsel2024_g.jpg"
 )

@@ -1,4 +1,5 @@
 
+
 # Load libraries ----------------------------------------------------------
 
 library("tidyverse")
@@ -8,13 +9,17 @@ library("scales")
 # Read file ---------------------------------------------------------------
 
 stoffwechsel <- read_csv("data/processed/stoffwechsel2024.csv") %>%
-  mutate(Fett = Fett * 9, Kohlenhydrate = Kohlenhydrate * 4)
+  mutate(
+    Fett = Fett * 9,
+    Kohlenhydrate = Kohlenhydrate * 4,
+    Summe = Fett + Kohlenhydrate
+  )
 
 # Reformat table ----------------------------------------------------------
 
 stoffwechsel <- stoffwechsel %>%
   pivot_longer(
-    cols = Fett:Kohlenhydrate,
+    cols = c(Fett, Kohlenhydrate, Summe),
     names_to = "Nährstoff",
     values_to = "Brennwert"
   )
@@ -38,11 +43,11 @@ stoffwechsel.plot <- stoffwechsel %>%
     labels = label_number(suffix = " kcal")
   ) +
   scale_colour_manual(
-    values = c("#1380A1", "#FAAB18"),
-    labels = c("Fett", "Kohlenhydrate")
+    values = c("#1380A1", "#FAAB18", "#990000"),
+    labels = c("Fett", "Kohlenhydrate", "Summe")
   ) +
   bbc_style() +
-  labs(title = "Nährstoffverbrauch [kcal]") +
+  labs(title = "Nährstoffverbrauch pro Stunde [kcal]") +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 20, 9, 0))
 
