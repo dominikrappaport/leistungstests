@@ -7,12 +7,12 @@ library("lubridate")
 
 # Read from files ---------------------------------------------------------
 
-leistungstests <-
+gasaustausch <-
   read.csv("data/processed/Leistungsmessung202410.csv")
 
 # Reformat table ----------------------------------------------------------
 
-leistungstests <- leistungstests %>%
+gasaustausch <- gasaustausch %>%
   mutate(t = hms(t)) %>%
   pivot_longer(
     cols = c("V.O2", "V.CO2"),
@@ -22,7 +22,7 @@ leistungstests <- leistungstests %>%
 
 # Plot results ------------------------------------------------------------
 
-leistungstests %>%
+gasaustausch %>%
   filter(P > 50) %>%
   ggplot(aes(x = t, y = Gas.Wert, colour = Gas)) +
   geom_line() +
@@ -39,4 +39,4 @@ leistungstests %>%
   bbc_style() +
   labs(title = "Gasaustausch während des VO2Max Tests") +
   theme(axis.text.x = element_text(hjust = 0),
-        plot.margin = margin(9, 20, 9, 0))
+        plot.margin = margin(9, 30, 9, 0))
