@@ -18,7 +18,7 @@ segment <- segment %>%
     Time = hms(
       ifelse(str_count(Time, pattern = ":") == 2, Time, paste0("0:", Time))
       ),
-    Sex = as.factor(Sex),
+    Sex = as.factor(Sex)%>% fct_relevel("Men", "Women", ""),
     Age.group = as.factor(Age.group),
     Weight.group = as.factor(Weight.group)
   )
@@ -29,13 +29,13 @@ segment %>%
   mutate(Time = period_to_seconds(Time)/60) %>%
   filter(Sex %in% c("Men", "Women")) %>%
   ggplot(aes(x = Time, fill = Sex)) +
-  geom_histogram(binwidth = 5, colour = "white", position = position_dodge2()) +
+  geom_histogram(binwidth = 5, colour = "white", position = position_dodge2(reverse = TRUE)) +
   geom_hline(yintercept = 0,
              linewidth = 1,
              colour = "#333333") +
   scale_x_continuous(
-    limits = c(0, 90), 
-    labels = c(seq(0, 85, 5), "90 Minuten"), breaks=seq(0, 90, 5)
+    limits = c(15, 60), 
+    labels = c(seq(15, 55, 5), "60 Minuten"), breaks=seq(15, 60, 5)
     ) +
   scale_fill_manual(
     values = c("#1380A1", "#FAAB18"), 
