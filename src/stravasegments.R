@@ -42,6 +42,44 @@ segment %>%
     labels=c("Männer", "Frauen")
     ) +
   bbc_style() +
-  labs(title = "Strava Segment QD-Kahlenberg-Auffahrt von Klosterneuburg") +
+  labs(title = "Strava-Segment QD-Kahlenberg-Auffahrt von Klosterneuburg") +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 60, 9, 0))
+
+segment %>% 
+  mutate(Weight.group = Weight.group %>% 
+           fct_relevel(
+             "54 kg and under",
+             "55 to 64 kg",
+             "65 to 74 kg",
+             "75 to 84 kg",
+             "85 to 94 kg",
+             "95 kg to 104 kg",
+             "105 kg to 114 kg",
+             "115 kg and over"
+           )) %>%
+#  group_by(Sex, Weight.group) %>% 
+#  count() %>% 
+  filter(Weight.group != "") %>%
+  ggplot(aes(x = Weight.group, fill = Sex)) +
+  geom_histogram(colour = "white", position = position_dodge2(preserve = "single"), stat="count") +
+  geom_hline(yintercept = 0,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_discrete(labels = c(
+    "54 kg und leichter", 
+    "55 – 64 kg", 
+    "65 – 74 kg", 
+    "75 – 84 kg", 
+    "85 – 94 kg", 
+    "95–104 kg", 
+    "105–114 kg", 
+    "115 kg und mehr"
+  )) +
+  scale_fill_manual(
+    values = c("#1380A1", "#FAAB18"), 
+    labels=c("Männer", "Frauen")
+  ) +
+  bbc_style() +
+  labs(title = "Gewichtsverteilung", subtitle = "Strava-Segment QD-Kahlenberg-Auffahrt von Klosterneuburg")+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
