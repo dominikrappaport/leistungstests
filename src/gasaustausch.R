@@ -22,7 +22,7 @@ gasaustausch <- gasaustausch %>%
 
 # Plot results ------------------------------------------------------------
 
-gasaustausch %>%
+gasaustausch.plot <- gasaustausch %>%
   filter(P > 50) %>%
   ggplot(aes(x = t, y = Gas.Wert, colour = Gas)) +
   geom_line() +
@@ -40,3 +40,10 @@ gasaustausch %>%
   labs(title = "Gasaustausch während des VO2Max Tests") +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 30, 9, 0))
+
+finalise_plot(
+  plot_name = gasaustausch.plot,
+  source = "Quelle: High Performance Coaching Clemens Rumpl, St. Pölten",
+  width_pixels = 800,
+  save_filepath = "output/gasaustausch.jpg"
+)
