@@ -45,6 +45,9 @@ bodybattery.plot <- bodybattery %>%
   geom_hline(yintercept = 0,
              linewidth = 1,
              colour = "#333333") +
+  geom_vline(xintercept = as.Date("2024-11-07"),
+             linewidth = 1,
+             colour = "red") +
   scale_x_date() +
   scale_y_continuous() +
   scale_color_manual(values = c("#1380A1", "#FAAB18"),
