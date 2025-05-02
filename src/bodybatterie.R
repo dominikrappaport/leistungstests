@@ -99,7 +99,8 @@ recharged_hrv.plot <- tss_and_bodybattery_and_hrv %>%
 
 finalise_plot(
   plot_name = bodybattery.plot,
-  source = "Quelle: Messung mit Garmin Fenix",
+  #source = "Quelle: Messung mit Garmin Fenix",
+  source = "Source: Garmin Fenix 6 and 8",
   width_pixels = 800,
   save_filepath = "output/bodybattery.jpg"
 )
