@@ -21,16 +21,14 @@ hr <- hr %>%
 
 hr.plot <- hr %>%
   ggplot(aes(x = timestamp, y = heartrate)) +
-  geom_line() +
+  geom_line(color = "#1380A1") +
   geom_hline(yintercept = 0,
              linewidth = 1,
              colour = "#333333") +
   scale_x_datetime() +
   scale_y_continuous() +
-  scale_color_manual(values = c("#1380A1"),
-                     labels = c("Heartrate")) +
   bbc_style() +
-  labs(title = "Heartrate") +
+  labs(title = "Herzfrequenz") +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 30, 9, 0))
 
