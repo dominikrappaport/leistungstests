@@ -1,6 +1,7 @@
 # Load libraries ----------------------------------------------------------
 
 library("tidyverse")
+library("lubridate")
 library("bbplot")
 library("scales")
 
@@ -15,7 +16,9 @@ tl <- tl %>%
     date = as.Date(date, format = "%d.%m.%y"), 
     year = as.factor(year(date)),
     month = as.factor(month(date)),
+    week  = as.factor(isoweek(date)),
     day = as.factor(day(date)),
+    duration = as.numeric(hms(duration), units="hours"),
     date2 = as.Date(paste0("2001", "-", month, "-", day)))
 
 # Plot results ------------------------------------------------------------
@@ -69,7 +72,7 @@ atl.plot <- tl %>%
     breaks = seq(0, 80, 10),
   ) +
   bbc_style() +
-  labs(title = "Chronische Trainingslast (ATL)")
+  labs(title = "Akute Trainingslast (ATL)")
 
 finalise_plot(
   plot_name = tl.plot,
@@ -92,3 +95,13 @@ finalise_plot(
   width_pixels = 800,
   save_filepath = "output/atl.jpg"
 )
+
+tl %>% 
+  group_by(year) %>%
+  summarise(
+    training_hours_per_year = sum(duration, na.rm = TRUE),
+    training_hours_per_week = training_hours_per_year / 365 * 7,
+    TSS_per_year = sum(TSS, na.rm = TRUE),
+    TSS_per_week = TSS_per_year / 365 * 7,
+    average_CTL = mean(CTL, na.rm = TRUE),
+  )
