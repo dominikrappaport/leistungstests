@@ -96,12 +96,31 @@ finalise_plot(
   save_filepath = "output/atl.jpg"
 )
 
+days_in_year_elapsed <- function(y) {
+  year = as.numeric(as.character(y))
+  today <- today()
+  current_year <- year(today)
+  
+  if (year < current_year) {
+    return(if_else(leap_year(year), 366, 365))
+  } else if (year == current_year) {
+    return(yday(today))  # Number of days since Jan 1 including today
+  } else {
+    stop("Year is in the future; elapsed days are not defined.")
+  }
+}
+
 tl %>% 
   group_by(year) %>%
   summarise(
     training_hours_per_year = sum(duration, na.rm = TRUE),
-    training_hours_per_week = training_hours_per_year / 365 * 7,
+    training_hours_per_week = training_hours_per_year,
     TSS_per_year = sum(TSS, na.rm = TRUE),
-    TSS_per_week = TSS_per_year / 365 * 7,
+    TSS_per_week = TSS_per_year,
     average_CTL = mean(CTL, na.rm = TRUE),
+  ) %>%
+  rowwise() %>%
+  mutate(
+    training_hours_per_week = training_hours_per_week / days_in_year_elapsed(year) * 7,
+    TSS_per_week = TSS_per_week / days_in_year_elapsed(year) * 7
   )
