@@ -2,9 +2,7 @@
 title: "Training Load"
 author: "Dominik Rappaport"
 date: "2025-08-03"
-output: 
-  html_document:
-    output_dir: "output"
+output: github_document
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
