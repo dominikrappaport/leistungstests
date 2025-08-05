@@ -35,7 +35,7 @@ tl <- tl %>%
 
 # Trainingsstatistiken
 
-Übersicht über Trainingsstunden, TSS und CTL für die Jahre 2020 bis 2025. Als Zeitraum zum Berechnen des Durchschnitts wurden alle (bereits verstrichenen) Wochen des Jahres herangezogen und nicht nur die, an denen ein Training grundsätzlich möglich war. D. h., Urlaube, Krankenstände, Dienstreisen usw. drücken den Schnitt.
+Übersicht über Trainingsstunden, TSS und CTL für die Jahre 2020 bis 2025. Als Zeitraum zum Berechnen des Durchschnitts wurden alle (bereits verstrichenen) Wochen des jeweiligen Jahres herangezogen und nicht nur jene, an denen ein Training grundsätzlich möglich war. Als Konsequenz drücken zum Beispiel Urlaube, Krankenstände oder Dienstreisen den Schnitt.
 
 ```{r, echo=FALSE}
 days_in_year_elapsed <- function(y) {
@@ -63,19 +63,16 @@ yearly_statistics <- tl %>%
   ) %>%
   rowwise() %>%
   mutate(
-    training_hours_per_year = round(training_hours_per_year),
-    training_hours_per_week = round(training_hours_per_week / days_in_year_elapsed(year) * 7, 2),
-    TSS_per_year = round(TSS_per_year),
-    TSS_per_week = round(TSS_per_week / days_in_year_elapsed(year) * 7),
-    average_CTL = round(average_CTL)
-  ) %>%
-  rename(Jahr = year, 
-         `Trainingsstunden` = training_hours_per_year,
-         `Trainingsstunden pro Woche (Ø)` = training_hours_per_week,
-         `TSS` = TSS_per_year,
-         `TSS pro Woche (Ø)` = TSS_per_week,
-         `CTL (Ø)` = average_CTL)
-kable(yearly_statistics, caption = "Trainingsstatistik")
+    training_hours_per_week = training_hours_per_week / days_in_year_elapsed(year) * 7,
+    TSS_per_week = TSS_per_week / days_in_year_elapsed(year) * 7
+  )
+kable(
+  yearly_statistics, 
+  caption = "Trainingsstatistik",
+  col.names = c("Jahr", "Trainingsstunden", "Trainingsstunden pro Woche (Ø)", "TSS", "TSS pro Woche (Ø)", "CTL (Ø)"),
+  digits = c(0, 0, 2, 0, 0, 0),
+  format.args = list(big.mark = ".", decimal.mark = ",", scientific = FALSE)
+)
 ```
 
 ```{r, echo=FALSE, fig.height=30, warning=FALSE}
