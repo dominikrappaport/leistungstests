@@ -71,7 +71,7 @@ kable(
   caption = "Trainingsstatistik",
   col.names = c("Jahr", "Trainingsstunden", "Trainingsstunden pro Woche (Ø)", "TSS", "TSS pro Woche (Ø)", "CTL (Ø)"),
   digits = c(0, 0, 2, 0, 0, 0),
-  format.args = list(big.mark = ".", decimal.mark = ",", scientific = FALSE)
+  format.args = list(big.mark = "&#8239;", decimal.mark = ",", scientific = FALSE)
 )
 ```
 
