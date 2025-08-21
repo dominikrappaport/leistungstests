@@ -2,6 +2,11 @@ Trainingsstatisik
 ================
 Dominik Rappaport
 
+- [Trainingsstatistiken](#trainingsstatistiken)
+- [Verlauf der chronischen
+  Trainingslast](#verlauf-der-chronischen-trainingslast)
+- [Krankenstandstage](#krankenstandstage)
+
 # Trainingsstatistiken
 
 Übersicht über Trainingsstunden, TSS und CTL für die Jahre 2020 bis
