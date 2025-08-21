@@ -27,13 +27,3 @@ sickness %>%
   summarise(
     sickdays = sum(sickdays),
   )
-
-
-sickness %>%
-  mutate(sickdays = ifelse(sickness == "healthy", 0, 1)) %>%
-  select(year, sickdays) %>%
-  filter(is.na(sickdays))
-
-test <- sickness %>%
-  mutate(sickdays = ifelse(sickness == "Healthy", 0, 1)) %>%
-  select(year, sickness, sickdays)
