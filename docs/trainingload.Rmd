@@ -1,7 +1,6 @@
 ---
-title: "Training Load"
+title: "Trainingsstatisik"
 author: "Dominik Rappaport"
-date: "2025-08-03"
 output: github_document
 ---
 
@@ -29,7 +28,8 @@ tl <- tl %>%
     week  = as.factor(isoweek(date)),
     day = as.factor(day(date)),
     duration = as.numeric(hms(duration), units="hours"),
-    date2 = as.Date(paste0("2001", "-", month, "-", day)))
+    date2 = as.Date(paste0("2001", "-", month, "-", day))
+  )
 
 ```
 
@@ -68,12 +68,13 @@ yearly_statistics <- tl %>%
   )
 kable(
   yearly_statistics, 
-  caption = "Trainingsstatistik",
   col.names = c("Jahr", "Trainingsstunden", "Trainingsstunden pro Woche (Ø)", "TSS", "TSS pro Woche (Ø)", "CTL (Ø)"),
   digits = c(0, 0, 2, 0, 0, 0),
   format.args = list(big.mark = "&#8239;", decimal.mark = ",", scientific = FALSE)
 )
 ```
+
+# Verlauf der chronischen Trainingslast
 
 ```{r, echo=FALSE, fig.height=30, warning=FALSE}
 tl %>%
@@ -90,6 +91,37 @@ tl %>%
     breaks = seq(0, 80, 10),
   ) +
   facet_wrap(~ year, ncol = 1) +
-  bbc_style() +
-  labs(title = "Chronische Trainingslast (CTL)")
+  bbc_style()
+```
+
+# Krankenstandstage
+
+```{r, echo=FALSE, warning=FALSE}
+# Read from files ---------------------------------------------------------
+
+sickness <- read_csv("data/processed/sickness.csv", show_col_types = FALSE)
+
+# Reformat table ----------------------------------------------------------
+
+sickness <- sickness %>%
+  mutate(
+    date = as.Date(date, format = "%d.%m.%y"),
+    year = year(date),
+    sickness = as.factor(sickness)
+  )
+
+# Evaluate and display table
+
+sickdays <- sickness %>%
+  mutate(sickdays = ifelse(sickness == "Healthy", 0, 1)) %>%
+  select(year, sickdays) %>%
+  group_by(year) %>%
+  summarise(
+    sickdays = sum(sickdays),
+  )
+
+kable(
+  sickdays, 
+  col.names = c("Jahr", "Anzahl Krankenstandstage")
+  )
 ```

@@ -1,7 +1,6 @@
-Training Load
+Trainingsstatisik
 ================
 Dominik Rappaport
-2025-08-03
 
 # Trainingsstatistiken
 
@@ -19,8 +18,19 @@ Schnitt.
 | 2022 | 364 | 6,97 | 15 427 | 296 | 41 |
 | 2023 | 323 | 6,20 | 18 271 | 350 | 52 |
 | 2024 | 370 | 7,08 | 21 071 | 403 | 56 |
-| 2025 | 157 | 5,03 | 8 590 | 276 | 38 |
+| 2025 | 157 | 4,70 | 8 590 | 258 | 38 |
 
-Trainingsstatistik
+# Verlauf der chronischen Trainingslast
 
 ![](trainingload_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+
+# Krankenstandstage
+
+| Jahr | Anzahl Krankenstandstage |
+|-----:|-------------------------:|
+| 2020 |                       42 |
+| 2021 |                       14 |
+| 2022 |                       24 |
+| 2023 |                       13 |
+| 2024 |                       22 |
+| 2025 |                        7 |
