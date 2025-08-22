@@ -6,6 +6,7 @@ Dominik Rappaport
 - [Verlauf der chronischen
   Trainingslast](#verlauf-der-chronischen-trainingslast)
 - [Krankenstandstage](#krankenstandstage)
+- [TSS pro Kalenderwoche](#tss-pro-kalenderwoche)
 
 # Trainingsstatistiken
 
@@ -23,7 +24,7 @@ Schnitt.
 | 2022 | 364 | 6,97 | 15 427 | 296 | 41 |
 | 2023 | 323 | 6,20 | 18 271 | 350 | 52 |
 | 2024 | 370 | 7,08 | 21 071 | 403 | 56 |
-| 2025 | 157 | 4,70 | 8 590 | 258 | 38 |
+| 2025 | 157 | 4,68 | 8 590 | 257 | 38 |
 
 # Verlauf der chronischen Trainingslast
 
@@ -39,3 +40,7 @@ Schnitt.
 | 2023 |                       13 |
 | 2024 |                       22 |
 | 2025 |                        7 |
+
+# TSS pro Kalenderwoche
+
+![](trainingload_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
