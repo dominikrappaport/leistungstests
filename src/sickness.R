@@ -18,7 +18,7 @@ sickness <- sickness %>%
     sickness = as.factor(sickness)
   )
 
-# Evaluate
+# Evaluate ----------------------------------------------------------------
 
 sickness %>%
   mutate(sickdays = ifelse(sickness == "Healthy", 0, 1)) %>%
