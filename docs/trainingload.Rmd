@@ -174,3 +174,42 @@ tl %>%
   facet_wrap(~ year, ncol = 1) +
   bbc_style()
 ```
+
+# Gewichtsverlauf
+
+```{r, fig.height=30, echo=FALSE}
+
+# Read from files ---------------------------------------------------------
+
+weight <- read_csv("data/processed/weight.csv",show_col_types = FALSE)
+
+# Reformat table ----------------------------------------------------------
+
+weight <- weight %>%
+  mutate(
+    date = as.Date(date, format = "%d.%m.%y"),
+    year = as.factor(year(date)),
+    month = as.factor(month(date)),
+    day = as.factor(day(date)),
+    date2 = as.Date(paste0("2001", "-", month, "-", day))
+  ) %>%
+  drop_na()
+
+# Plot results ------------------------------------------------------------
+
+weight %>%
+  ggplot(aes(x = date2, y = weight)) +
+  geom_line(colour = "#1380A1", linewidth = 1) +
+  geom_hline(yintercept = 58,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_date(
+    date_labels = "%b"
+  ) +
+  scale_y_continuous(
+    limits = c(58, 70),
+    breaks = seq(58, 70, 2),
+  ) +
+  facet_wrap(~ year, ncol = 1) +
+  bbc_style()
+```

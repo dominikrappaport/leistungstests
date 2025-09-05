@@ -7,6 +7,7 @@ Dominik Rappaport
   Trainingslast](#verlauf-der-chronischen-trainingslast)
 - [Krankenstandstage](#krankenstandstage)
 - [TSS pro Kalenderwoche](#tss-pro-kalenderwoche)
+- [Gewichtsverlauf](#gewichtsverlauf)
 
 # Trainingsstatistiken
 
@@ -44,3 +45,7 @@ Schnitt.
 # TSS pro Kalenderwoche
 
 ![](trainingload_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+
+# Gewichtsverlauf
+
+![](trainingload_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
