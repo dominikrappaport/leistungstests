@@ -1,0 +1,165 @@
+---
+title: "Gewicht"
+output:
+  github_document:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+
+# Load libraries ----------------------------------------------------------
+
+library("tidyverse")
+library("lubridate")
+library("bbplot")
+library("scales")
+library(knitr)
+
+# Read from files ---------------------------------------------------------
+
+weight <- read_csv("data/processed/weight.csv",show_col_types = FALSE)
+
+# Reformat table ----------------------------------------------------------
+
+weight <- weight %>%
+  mutate(
+    date = as.Date(date, format = "%d.%m.%y"),
+    year = as.factor(year(date)),
+    month = as.factor(month(date)),
+    day = as.factor(day(date)),
+    date2 = as.Date(paste0("2001", "-", month, "-", day))
+  ) %>%
+  drop_na()
+```
+
+## Gewichtsverlauf
+
+### Verlauf gesamt
+
+```{r, echo=FALSE}
+
+# Plot results ------------------------------------------------------------
+
+weight %>%
+  ggplot(aes(x = date, y = weight)) +
+  geom_line(colour = "#1380A1", linewidth = 1) +
+  geom_hline(yintercept = 58,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_date() +
+  scale_y_continuous(
+    limits = c(58, 70),
+    breaks = seq(58, 70, 2),
+  ) +
+  bbc_style()
+```
+
+### Verlauf nach Jahren
+
+```{r, fig.height=30, echo=FALSE}
+
+# Plot results ------------------------------------------------------------
+
+weight %>%
+  ggplot(aes(x = date2, y = weight)) +
+  geom_line(colour = "#1380A1", linewidth = 1) +
+  geom_hline(yintercept = 58,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_date(
+    date_labels = "%b"
+  ) +
+  scale_y_continuous(
+    limits = c(58, 70),
+    breaks = seq(58, 70, 2),
+  ) +
+  facet_wrap(~ year, ncol = 1) +
+  bbc_style()
+```
+
+## Körperfettanteil
+
+### Verlauf gesamt
+
+```{r, echo=FALSE}
+# Plot results ------------------------------------------------------------
+
+weight %>%
+  ggplot(aes(x = date, y = percentfat)) +
+  geom_line(colour = "#1380A1", linewidth = 1) +
+  geom_hline(yintercept = 10,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_date() +
+  scale_y_continuous(
+    labels = percent_format(scale = 1),
+    limits = c(10,25)
+  ) +
+  bbc_style()
+```
+
+### Verlauf nach Jahren
+
+```{r, fig.height=30, echo=FALSE}
+# Plot results ------------------------------------------------------------
+
+weight %>%
+  ggplot(aes(x = date2, y = percentfat)) +
+  geom_line(colour = "#1380A1", linewidth = 1) +
+  geom_hline(yintercept = 10,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_date(
+    date_labels = "%b"
+  ) +
+  scale_y_continuous(
+    labels = percent_format(scale = 1),
+    limits = c(10,25)
+  ) +
+  facet_wrap(~ year, ncol = 1) +
+  bbc_style()
+```
+
+## Körperfettverlauf absolut
+
+### Verlauf gesamt
+
+```{r, echo=FALSE}
+# Plot results ------------------------------------------------------------
+
+weight %>%
+  ggplot(aes(x = date, y = fatweight)) +
+  geom_line(colour = "#1380A1", linewidth = 1) +
+  geom_hline(yintercept = 5,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_date() +
+  scale_y_continuous(
+    labels = seq(5, 20, 5),
+    limits = c(5,20)
+  ) +
+  bbc_style()
+```
+
+### Verlauf nach Jahren
+
+```{r, fig.height=30, echo=FALSE}
+# Plot results ------------------------------------------------------------
+
+weight %>%
+  ggplot(aes(x = date2, y = fatweight)) +
+  geom_line(colour = "#1380A1", linewidth = 1) +
+  geom_hline(yintercept = 5,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_date(
+    date_labels = "%b"
+  ) +
+  scale_y_continuous(
+    labels = seq(5, 20, 5),
+    limits = c(5,20)
+  ) +
+  facet_wrap(~ year, ncol = 1) +
+  bbc_style()
+```

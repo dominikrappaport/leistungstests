@@ -5,11 +5,13 @@ Dominik Rappaport
 - [Trainingsstatistiken](#trainingsstatistiken)
 - [Verlauf der chronischen
   Trainingslast](#verlauf-der-chronischen-trainingslast)
+  - [Verlauf gesamt](#verlauf-gesamt)
+  - [Verlauf nach Jahren](#verlauf-nach-jahren)
 - [Krankenstandstage](#krankenstandstage)
 - [TSS pro Kalenderwoche](#tss-pro-kalenderwoche)
-- [Gewichtsverlauf](#gewichtsverlauf)
+  - [Verlauf nach Jahren](#verlauf-nach-jahren-1)
 
-# Trainingsstatistiken
+## Trainingsstatistiken
 
 Übersicht über Trainingsstunden, TSS und CTL für die Jahre 2020 bis
 2025. Als Zeitraum zum Berechnen des Durchschnitts wurden alle (bereits
@@ -25,13 +27,19 @@ Schnitt.
 | 2022 | 364 | 6,97 | 15 427 | 296 | 41 |
 | 2023 | 323 | 6,20 | 18 271 | 350 | 52 |
 | 2024 | 370 | 7,08 | 21 071 | 403 | 56 |
-| 2025 | 189 | 5,34 | 10 614 | 300 | 41 |
+| 2025 | 189 | 5,32 | 10 614 | 298 | 41 |
 
-# Verlauf der chronischen Trainingslast
+## Verlauf der chronischen Trainingslast
+
+### Verlauf gesamt
 
 ![](trainingload_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
-# Krankenstandstage
+### Verlauf nach Jahren
+
+![](trainingload_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+## Krankenstandstage
 
 | Jahr | Anzahl Krankenstandstage |
 |-----:|-------------------------:|
@@ -42,10 +50,8 @@ Schnitt.
 | 2024 |                       22 |
 | 2025 |                        7 |
 
-# TSS pro Kalenderwoche
+## TSS pro Kalenderwoche
 
-![](trainingload_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
-
-# Gewichtsverlauf
+### Verlauf nach Jahren
 
 ![](trainingload_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
