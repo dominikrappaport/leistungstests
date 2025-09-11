@@ -5,19 +5,25 @@ library("bbplot")
 library("scales")
 library("lubridate")
 
+
+# Define Strava segment number --------------------------------------------
+
+segment <- "2891805"
+segment_title <- "Jauerling ganz rauf"
+
 # Read from files ---------------------------------------------------------
 
 segment <-
-  read.csv("data/processed/stravasegments/leaderboard_37299908.csv")
+  read.csv(paste0("data/processed/stravasegments/leaderboard_", segment,".csv"))
 
 # Reformat table ----------------------------------------------------------
 
 segment <- segment %>%
   mutate(
     Date = as.Date(Date, format = "%d %b %Y"),
-    Time = hms(ifelse(
+    Time = period_to_seconds(hms(ifelse(
       str_count(Time, pattern = ":") == 2, Time, paste0("0:", Time)
-    )),
+    ))) / 60,
     Sex = as.factor(Sex) %>% fct_relevel("Men", "Women", ""),
     Age.group = as.factor(Age.group),
     Weight.group = as.factor(Weight.group)
@@ -26,7 +32,6 @@ segment <- segment %>%
 # Plot results ------------------------------------------------------------
 
 segment.verteilung.plot <- segment %>%
-  mutate(Time = period_to_seconds(Time) / 60) %>%
   filter(Sex %in% c("Men", "Women")) %>%
   ggplot(aes(x = Time, fill = Sex)) +
   geom_histogram(
@@ -45,7 +50,7 @@ segment.verteilung.plot <- segment %>%
   scale_fill_manual(values = c("#1380A1", "#FAAB18"),
                     labels = c("Männer", "Frauen")) +
   bbc_style() +
-  labs(title = "To to finish-Verteilung", subtitle = "Strava-Segment QD-Kahlenberg-Auffahrt von Klosterneuburg") +
+  labs(title = "To to finish-Verteilung", subtitle = paste("Strava-Segment", segment_title)) +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 70, 9, 0))
 
@@ -90,7 +95,7 @@ segment.verteilung.gewichtsgruppen.plot <- segment %>%
   scale_fill_manual(values = c("#1380A1", "#FAAB18"),
                     labels = c("Männer", "Frauen")) +
   bbc_style() +
-  labs(title = "Gewichtsverteilung", subtitle = "Strava-Segment QD-Kahlenberg-Auffahrt von Klosterneuburg") +
+  labs(title = "Gewichtsverteilung", subtitle = paste("Strava-Segment", segment_title)) +
   theme(axis.text.x = element_text(
     angle = 90,
     vjust = 0.5,
@@ -101,12 +106,12 @@ finalise_plot(
   plot_name = segment.verteilung.plot,
   source = "Quelle: Strava Leaderboard",
   width_pixels = 800,
-  save_filepath = "output/segment_distribution.jpg"
+  save_filepath = paste0("output/segment_distribution_", segment, ".jpg")
 )
 
 finalise_plot(
   plot_name = segment.verteilung.gewichtsgruppen.plot,
   source = "Quelle: Strava Leaderboard",
   width_pixels = 800,
-  save_filepath = "output/segment_distribution_weightgroups.jpg"
+  save_filepath = paste0("output/segment_distribution_", segment, "weightgroups.jpg")
 )
