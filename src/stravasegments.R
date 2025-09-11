@@ -50,7 +50,7 @@ segment.verteilung.plot <- segment %>%
   scale_fill_manual(values = c("#1380A1", "#FAAB18"),
                     labels = c("Männer", "Frauen")) +
   bbc_style() +
-  labs(title = "To to finish-Verteilung", subtitle = paste("Strava-Segment", segment_title)) +
+  labs(title = "Time to finish-Verteilung", subtitle = paste("Strava-Segment", segment_title)) +
   theme(axis.text.x = element_text(hjust = 0),
         plot.margin = margin(9, 70, 9, 0))
 
