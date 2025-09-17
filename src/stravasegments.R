@@ -20,7 +20,7 @@ segment <-
 
 segment <- segment %>%
   mutate(
-    Date = as.Date(Date, format = "%d %b %Y"),
+    Date = as.Date(Date, format = "%b %d, %Y"),
     Time = period_to_seconds(hms(ifelse(
       str_count(Time, pattern = ":") == 2, Time, paste0("0:", Time)
     ))) / 60,

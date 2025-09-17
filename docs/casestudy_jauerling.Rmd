@@ -1,0 +1,259 @@
+---
+output: html_document
+runtime: shiny
+title: Fallstudie Jauerling, Anstieg von Gut am Steg
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+
+library("knitr")
+library("knitr")
+library("kableExtra")
+library("tidyverse")
+library("scales")
+library("lubridate")
+library("bbplot")
+library("gt")
+
+segment <- "2891805"
+segment_title <- "Jauerling ganz rauf"
+
+# Read from files ---------------------------------------------------------
+
+segment <-
+  read.csv(paste0("../data/processed/stravasegments/leaderboard_", segment,".csv"))
+
+segment <- segment %>%
+  mutate(
+    Date = as.Date(Date, format = "%b %d, %Y"),
+    Time = period_to_seconds(hms(ifelse(str_count(Time, pattern = ":") == 2, Time, paste0("0:", Time)))) / 60,
+    Sex = as.factor(Sex) %>% fct_relevel("Men", "Women", ""),
+    Age.group = as.factor(Age.group),
+    Weight.group = as.factor(Weight.group)
+  )
+```
+
+## Daten über den Anstieg
+
+Der Anstieg auf den Jauerling von Gut am Steg (nächst Spitz an der Donau) weist einen der größten Höhenunterschiede in der näheren Umgebung auf. Seine Eckdaten sind:
+
+```{r, echo=FALSE, warning=FALSE}
+data.frame(
+  Merkmal = c("Länge [km]", 
+              "Höhenmeter [m]", 
+              "Durchschnittliche Steigung [%]"),
+  Wert = c("7,96", "717", "8,9")
+) %>%
+  gt() %>%
+  tab_options(
+    column_labels.hidden = TRUE
+  )
+```
+
+Das Segment ist auf [Strava](https://strava.com/segment/2891805) abrufbar.
+
+## Meine persönliche Bestzeit
+
+```{r, echo=FALSE, warning=FALSE}
+segment %>%
+  filter(Name == "Dominik Rappaport") %>%
+  rename(
+    Datum = Date,
+    Geschwindigkeit = Speed, 
+    Herzfrequenz = Heart.rate, 
+    Leistung = Power, 
+    Zeit = Time,
+    Geschlecht = Sex,
+    Altersklasse = Age.group,
+    Gewichtsklasse = Weight.group
+  ) %>%
+  select(!c(Position, Name)) %>%
+  gt() %>%
+  fmt_number(dec_mark = ",", sep_mark = "&#8239;") %>%
+  fmt_number(
+    columns = c("VAM", "Herzfrequenz", "Leistung"), 
+    decimals = 0
+  ) %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels(everything())
+  )
+```
+
+## Auswertung
+
+Segmentauswertung nach Geschlecht, Gewichts- und Altersklasse inklusive Lage- und Streuungsmaße.
+
+```{r statistik, echo=FALSE, warning=FALSE}
+inputPanel(
+  # Sex: allow Men, Women, or both (default both)
+  checkboxGroupInput(
+    inputId = "sex",
+    label   = "Geschlecht",
+    choices = c("Men", "Women"),
+    selected = c("Men", "Women")
+  ),
+
+  # Weight class: choose one or many (default all)
+  checkboxGroupInput(
+    inputId = "wclass",
+    label   = "Gewichtsklasse",
+    choices = c("54 kg and under", "55 to 64 kg", "65 to 74 kg",
+                "75 to 84 kg", "85 to 94 kg", "95 kg to 104 kg",
+                "105 kg to 114 kg", "115 kg and over"),
+    selected = c("54 kg and under", "55 to 64 kg", "65 to 74 kg",
+                 "75 to 84 kg", "85 to 94 kg", "95 kg to 104 kg",
+                 "105 kg to 114 kg", "115 kg and over")
+  ),
+
+  # Age class: choose one or many (default all)
+  checkboxGroupInput(
+    inputId = "aclass",
+    label   = "Altersklasse",
+    choices = c("19 and under", "20 to 24", "25 to 34", "35 to 44",
+                "45 to 54", "55 to 64", "65 to 69", "70 to 74", "75+"),
+    selected = c("19 and under", "20 to 24", "25 to 34", "35 to 44",
+                 "45 to 54", "55 to 64", "65 to 69", "70 to 74", "75+")
+  )
+)
+
+renderPlot({
+  segment %>%
+  filter(
+    Sex %in% input$sex,
+    Weight.group %in% input$wclass,
+    Age.group %in% input$aclass,
+  ) %>%
+  ggplot(aes(x = Time, fill = Sex)) +
+  geom_histogram(
+    binwidth = 5,
+    colour = "white",
+    position = position_dodge2(reverse = TRUE)
+  ) +
+  geom_hline(yintercept = 0,
+             linewidth = 1,
+             colour = "#333333") +
+  scale_x_continuous(
+    limits = c(15, 95),
+    labels = c(seq(15, 90, 5), "95 Minuten"),
+    breaks = seq(15, 95, 5)
+  ) +
+  scale_fill_manual(values = c("#1380A1", "#FAAB18"),
+                    # labels = c("Männer", "Frauen"),
+                    ) +
+  bbc_style() +
+  labs(
+    title = "Time to finish-Verteilung", 
+    subtitle = paste("Strava-Segment", segment_title)) +
+  theme(axis.text.x = element_text(hjust = 0),
+        plot.margin = margin(9, 70, 9, 0))
+})
+
+render_gt({
+  segment %>%
+  filter(
+    Sex %in% input$sex,
+    Weight.group %in% input$wclass,
+    Age.group %in% input$aclass,
+  ) %>%
+  rename(
+    Geschwindigkeit = Speed, 
+    Herzfrequenz = Heart.rate, 
+    Leistung = Power, 
+    Zeit = Time
+  ) %>%
+  pivot_longer(
+    cols = c(Geschwindigkeit, Herzfrequenz, Leistung, VAM, Zeit),
+    names_to = "Parameter", 
+    values_to = "Wert"
+  ) %>%
+  group_by(Parameter) %>%
+  summarise(
+    Median = median(Wert, na.rm = TRUE),
+    Mittelwert = mean(Wert, na.rm = TRUE),
+    Standardabweichung = sd(Wert, na.rm = TRUE),
+  ) %>%
+  gt() %>%
+  fmt_number(dec_mark = ",", sep_mark = "&#8239;") %>%
+  fmt_number(
+    rows = Parameter %in% c("VAM", "Herzfrequenz", "Leistung"), 
+    decimals = 0
+  ) %>%
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_column_labels(everything())
+  )
+})
+```
+
+## Zielzeit ermitteln
+
+```{r zielzeit, fig.height=40, echo=FALSE, warning=FALSE}
+Eff     <- 0.98
+cr      <- 0.005
+cwa     <- 0.4
+height  <- 715
+length  <- 7960
+
+f <- function(t, w) {
+  time <- t
+  V <- length / time
+  Wt <- w
+  
+  powerair <- cwa * 0.5 * 1.225 * V * V * V
+  powerroll <- cr * Wt * 9.81 * V
+  powerhill <- Wt * 9.81 * height / time
+  
+  powerair + powerroll + powerhill
+}
+
+time <- seq(0.5 * 3600, 1.5 * 3600, 1)
+weight <- seq(1, 200, 1)
+zielzeit <- expand.grid(time = time, weight = weight)
+zielzeit$watt <- mapply(f, zielzeit$time, zielzeit$weight)
+
+inputPanel(
+  numericInput(
+    inputId = "gewicht_fahrer",
+    label = "Gewicht Fahrer [kg]",
+    value = 63,
+    min = 0
+  ),
+  numericInput(
+    inputId = "gewicht_ausruestung",
+    label = "Gewicht Ausrüstung [kg]",
+    value = 12,
+    min = 0
+  ),
+  sliderInput(
+    inputId = "zielzeit",
+    label = "Zielzeit [min]",
+    min = 30,
+    max = 115,
+    value = 57,
+    step = 1
+  )
+)
+
+renderPlot({
+  zielzeit %>%
+    filter(
+      weight == input$gewicht_fahrer + input$gewicht_ausruestung,
+    ) %>%
+    mutate(weight = as.factor(weight)) %>%
+    ggplot(aes(x = time, y =watt)) +
+    geom_line(colour = "#1380A1", linewidth = 1) +
+    geom_hline(yintercept = 0,
+               linewidth = 1,
+               colour = "#333333") +
+    geom_vline(xintercept = input$zielzeit * 60,
+               linewidth = 1,
+               colour = "red") +
+    scale_x_time() +
+    scale_y_continuous(
+      breaks = seq(0, 300, 20)
+    ) +
+    bbc_style() +
+    labs(title = "Watt bei gegebener Zeit für Anstieg Jauerling")
+})
+```
