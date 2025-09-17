@@ -21,7 +21,7 @@ segment_title <- "Jauerling ganz rauf"
 # Read from files ---------------------------------------------------------
 
 segment <-
-  read.csv(paste0("../data/processed/stravasegments/leaderboard_", segment,".csv"))
+  read.csv(paste0("leaderboard_", segment,".csv"))
 
 segment <- segment %>%
   mutate(
