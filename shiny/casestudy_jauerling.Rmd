@@ -1,7 +1,9 @@
 ---
-output: html_document
+title: "Fallstudie Jauerling, Anstieg von Gut am Steg"
 runtime: shiny
-title: Fallstudie Jauerling, Anstieg von Gut am Steg
+output: html_document
+resource_files:
+- leaderboard_2891805.csv
 ---
 
 ```{r setup, include=FALSE, warning=FALSE}

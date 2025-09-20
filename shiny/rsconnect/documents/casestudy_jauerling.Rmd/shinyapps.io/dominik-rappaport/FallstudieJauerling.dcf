@@ -1,0 +1,13 @@
+name: FallstudieJauerling
+title: FallstudieJauerling
+username: dominik-rappaport
+account: dominik-rappaport
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15483558
+bundleId: 10918068
+url: https://dominik-rappaport.shinyapps.io/FallstudieJauerling/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+additionalFiles: leaderboard_2891805.csv
