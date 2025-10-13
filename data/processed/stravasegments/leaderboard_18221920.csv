@@ -1,0 +1,474 @@
+Position,Name,Date,Speed,Heart rate,Power,VAM,Time,Sex,Age group,Weight group
+1,Stefan Schweiger,"Oct 1, 2021",23.8,165,390,1272.0,10:47,Men,35 to 44,75 to 84 kg
+2,Bernd Eichinger,"Jul 25, 2021",23.4,187,406,1248.8,10:59,Men,35 to 44,65 to 74 kg
+3,Philipp Pils,"Mar 12, 2022",22.1,172,309,1180.7,11:37,Men,,55 to 64 kg
+4,Ciurciumel George,"Jul 10, 2022",21.0,,,1119.7,12:15,Men,,75 to 84 kg
+5,Roland Kogler,"Sep 25, 2017",20.6,,,1101.7,12:27,Men,35 to 44,85 to 94 kg
+6,Richard Kickinger,"May 20, 2018",20.4,166,,1088.6,12:36,Men,35 to 44,85 to 94 kg
+7,Stefan K,"Oct 30, 2021",20.4,,282,1088.6,12:36,Men,45 to 54,55 to 64 kg
+8,Markus Pratschker,"Mar 17, 2019",20.4,,290,1087.1,12:37,Men,35 to 44,75 to 84 kg
+9,Richard Neumann,"Sep 8, 2020",20.0,162,374,1067.4,12:51,Men,,85 to 94 kg
+10,Andreas Jaidhauser,"Mar 12, 2022",19.7,156,346,1051.0,13:03,Men,45 to 54,65 to 74 kg
+11,Philipp S.,"Aug 9, 2022",19.7,148,304,1051.0,13:03,Men,35 to 44,65 to 74 kg
+12,Andreas Schroll,"Jul 20, 2018",19.6,,,1044.4,13:08,Men,55 to 64,85 to 94 kg
+13,Andreas Schroll,"Jul 20, 2018",19.6,,,1044.4,13:08,Men,55 to 64,85 to 94 kg
+14,Jürgen Puchinger,"Sep 28, 2016",19.4,172,,1036.5,13:14,Men,20 to 24,75 to 84 kg
+15,Martin Haider,"Sep 4, 2015",19.3,162,325,1031.3,13:18,Men,25 to 34,75 to 84 kg
+16,Andreas Trauner,"Jul 22, 2020",19.2,158,317,1024.9,13:23,Men,45 to 54,75 to 84 kg
+17,hansi huber,"Nov 2, 2015",19.1,,,1021.0,13:26,,,
+18,Christoph Zwölfer,"Aug 11, 2022",19.1,158,346,1018.5,13:28,Men,25 to 34,85 to 94 kg
+19,Florian Größbacher,"Aug 2, 2025",18.9,,,1008.5,13:36,Men,35 to 44,55 to 64 kg
+20,Stefan Zulechner,"Aug 22, 2025",18.8,,305,1001.2,13:42,Men,35 to 44,75 to 84 kg
+21,Klaus Schwarzinger,"Jul 6, 2023",18.6,,276,993.9,13:48,Men,45 to 54,65 to 74 kg
+22,Richard Bailey,"May 11, 2019",18.5,,,987.9,13:53,Men,55 to 64,54 kg and under
+23,Roland Kogler,"Sep 16, 2013",18.5,,,986.8,13:54,Men,35 to 44,85 to 94 kg
+24,Alexandra Köszali,"Oct 9, 2020",18.5,,213,986.8,13:54,Women,25 to 34,54 kg and under
+25,Richard Wiesinger,"Jun 5, 2021",18.5,,,985.6,13:55,Men,35 to 44,54 kg and under
+26,Florian Posch,"Aug 14, 2016",18.4,183,284,984.4,13:56,,,
+27,Harald Mazanek,"Apr 21, 2024",18.4,,,984.4,13:56,Men,35 to 44,
+28,Michael Holland,"May 30, 2020",18.4,,304,982.1,13:58,Men,20 to 24,75 to 84 kg
+29,Robert Gouge,"Jun 3, 2014",18.3,151,,977.4,14:02,Men,25 to 34,75 to 84 kg
+30,Alex Giger,"Jun 10, 2019",18.3,,,976.2,14:03,Men,35 to 44,65 to 74 kg
+31,Martin Fischer,"Apr 24, 2017",18.2,161,258,973.9,14:05,Men,35 to 44,65 to 74 kg
+32,Siegfried Geiselhofer,"Jun 10, 2019",18.2,163,,972.8,14:06,Men,45 to 54,75 to 84 kg
+33,Roland Pils,"Mar 12, 2022",18.2,,,970.5,14:08,Men,,54 kg and under
+34,Oliver Brandl,"Sep 18, 2020",18.1,,,965.9,14:12,Men,35 to 44,65 to 74 kg
+35,Jürgen Kaindl,"Sep 6, 2014",18.1,,,963.7,14:14,Men,35 to 44,65 to 74 kg
+36,Lukas Viehberger,"May 13, 2018",18.0,,,962.5,14:15,Men,19 and under,75 to 84 kg
+37,Mario Nestelberger,"Jun 2, 2017",18.0,147,,962.5,14:15,Men,35 to 44,65 to 74 kg
+38,Lo Schi,"Jun 15, 2022",18.0,170,293,962.5,14:15,Men,45 to 54,75 to 84 kg
+39,Thomas Gansberger,"Aug 26, 2020",18.0,170,331,959.2,14:18,Men,45 to 54,75 to 84 kg
+40,wolfgang aigelsreiter,"May 20, 2018",17.8,142,,952.5,14:24,Men,45 to 54,54 kg and under
+41,Petr.Koblizek 🇨🇿,"Apr 21, 2019",17.8,,,950.3,14:26,Men,35 to 44,85 to 94 kg
+42,Markus Illetschko,"Sep 4, 2021",17.8,152,,950.3,14:26,Men,45 to 54,65 to 74 kg
+43,Georg Hofmeister,"May 23, 2017",17.8,152,327,948.1,14:28,Men,25 to 34,85 to 94 kg
+44,Andreas Drescher,"Aug 2, 2025",17.7,,,947.0,14:29,,,
+45,Marcel Riegler,"May 31, 2021",17.7,,,944.8,14:31,Men,20 to 24,55 to 64 kg
+46,Hannes Weissensteiner,"Jun 9, 2025",17.6,149,319,941.6,14:34,Men,45 to 54,75 to 84 kg
+47,Gerhard Oberleitner,"Nov 6, 2023",17.6,,,939.5,14:36,Men,55 to 64,
+48,Mike .,"Jul 19, 2015",17.5,145,,936.2,14:39,Men,35 to 44,75 to 84 kg
+49,Gottfried Dallinger,"Sep 1, 2023",17.5,,,932.0,14:43,Men,55 to 64,
+50,Leo Bösendorfer,"May 11, 2024",17.4,145,309,931.0,14:44,Men,45 to 54,85 to 94 kg
+51,Balint Bakosi,"Mar 21, 2025",17.4,161,,931.0,14:44,Men,25 to 34,85 to 94 kg
+52,Jakob Karner,"Apr 30, 2016",17.4,165,,927.8,14:47,Men,,85 to 94 kg
+53,Mike Herleth,"Aug 19, 2023",17.4,166,238,927.8,14:47,Men,35 to 44,65 to 74 kg
+54,Benjamin Schmidradler,"Aug 19, 2023",17.3,,,924.7,14:50,Men,25 to 34,85 to 94 kg
+55,Philip Lanxenlehner,"Aug 2, 2023",17.3,,,923.6,14:51,Men,25 to 34,
+56,martin f.,"Jul 10, 2020",17.3,,232,923.6,14:51,Men,35 to 44,55 to 64 kg
+57,Gottfried Maurer,"Jul 24, 2016",17.3,165,253,922.6,14:52,Men,35 to 44,65 to 74 kg
+58,PR-optics Philipp Reindl,"Jul 20, 2025",17.3,144,,921.6,14:53,Men,35 to 44,75 to 84 kg
+59,Leo Hintersteiner,"Aug 19, 2023",17.1,152,270,911.4,15:03,Men,55 to 64,
+60,Roman Wurzer,"Mar 7, 2021",17.1,159,,910.4,15:04,Men,,65 to 74 kg
+61,Dominik Eder,"May 27, 2020",17.0,143,,909.3,15:05,Men,35 to 44,75 to 84 kg
+62,Hans-Jürgen Hofmacher,"Jul 4, 2024",17.0,,,909.3,15:05,Men,45 to 54,75 to 84 kg
+63,Wolfgang Klestil,"Jul 5, 2023",17.0,136,203,907.3,15:07,Men,35 to 44,55 to 64 kg
+64,Alexander Strohmüller,"Sep 15, 2025",17.0,158,,907.3,15:07,Men,25 to 34,
+65,Armin Neuhauser,"Jul 27, 2015",16.9,,,904.4,15:10,Men,25 to 34,65 to 74 kg
+66,Dominic Miglbauer,"Sep 11, 2017",16.9,156,,900.4,15:14,Men,25 to 34,65 to 74 kg
+67,Thomas Herz,"Aug 18, 2017",16.8,,,899.4,15:15,Men,25 to 34,75 to 84 kg
+68,Gottfried Gustav Ellmauer,"May 27, 2016",16.8,152,,897.4,15:17,Men,45 to 54,65 to 74 kg
+69,Vladimir Kovacik,"Oct 20, 2021",16.8,155,,897.4,15:17,Men,20 to 24,75 to 84 kg
+70,Martin Gasselsberger,"Oct 21, 2017",16.8,,,896.5,15:18,Men,35 to 44,75 to 84 kg
+71,Kevin Sieder,"May 3, 2021",16.8,,262,896.5,15:18,Men,20 to 24,75 to 84 kg
+72,Christian Simetzberger,"Sep 20, 2021",16.8,,,896.5,15:18,Men,,54 kg and under
+73,Martin Fischer,"Jul 12, 2016",16.7,164,,892.6,15:22,Men,45 to 54,75 to 84 kg
+74,Johannes Gratz,"Aug 10, 2025",16.7,,,890.6,15:24,Men,35 to 44,65 to 74 kg
+75,Kurt Pammer,"Jun 11, 2020",16.7,160,,889.7,15:25,Men,45 to 54,75 to 84 kg
+76,Lukas Kerndler,"Apr 12, 2020",16.6,152,,888.7,15:26,Men,35 to 44,85 to 94 kg
+77,Tomáš Gottwald,"Jul 22, 2023",16.6,157,,886.8,15:28,Men,20 to 24,65 to 74 kg
+78,Sebastian Peham,"May 20, 2023",16.5,78,,878.3,15:37,Men,20 to 24,75 to 84 kg
+79,Albert Oberleitner,"Sep 1, 2023",16.3,145,,871.8,15:44,Men,45 to 54,65 to 74 kg
+80,Tom Riegler,"Jul 25, 2020",16.3,148,,870.9,15:45,Men,45 to 54,65 to 74 kg
+81,Christian Sch.,"Jun 20, 2021",16.3,143,264,869.9,15:46,Men,45 to 54,75 to 84 kg
+82,Kuba Kuba,"May 30, 2024",16.3,137,191,869.9,15:46,Men,25 to 34,55 to 64 kg
+83,Mateusz Kuzmik,"May 30, 2024",16.3,147,223,869.9,15:46,Men,25 to 34,65 to 74 kg
+84,Michał Pałys,"May 30, 2024",16.3,140,236,868.1,15:48,Men,25 to 34,65 to 74 kg
+85,Rudi Willhalm,"Nov 3, 2022",16.2,,,864.5,15:52,Men,25 to 34,75 to 84 kg
+86,Markus Olbrich,"Aug 13, 2020",16.2,127,,863.5,15:53,Men,25 to 34,65 to 74 kg
+87,Siegbert Filzmoser 🇦🇹,"Sep 15, 2018",16.2,168,267,862.6,15:54,Men,45 to 54,75 to 84 kg
+88,Philipp Wegscheider,"Apr 24, 2017",16.1,151,241,861.7,15:55,Men,,65 to 74 kg
+89,Marco Strödike,"Sep 6, 2021",16.1,,,859.9,15:57,Men,25 to 34,85 to 94 kg
+90,Norbert Hinteregger,"Apr 27, 2025",16.1,,,857.3,16:00,Men,35 to 44,65 to 74 kg
+91,Stephanie de Bettin Padolin,"Nov 3, 2022",16.0,,111,856.4,16:01,Women,25 to 34,55 to 64 kg
+92,Heidi Hackl,"Apr 27, 2025",16.0,,,856.4,16:01,Women,45 to 54,55 to 64 kg
+93,Christian Pfeiffer,"Jul 12, 2015",16.0,,,855.5,16:02,Men,25 to 34,75 to 84 kg
+94,Florian Klemm,"Sep 15, 2018",16.0,170,243,854.6,16:03,Men,25 to 34,65 to 74 kg
+95,Daniel Punz,"Mar 20, 2020",16.0,136,,854.6,16:03,Men,25 to 34,54 kg and under
+96,Bernhard Mitterer,"Jun 15, 2022",16.0,156,,854.6,16:03,Men,35 to 44,75 to 84 kg
+97,Sebastian Pöggsteiner,"Jun 10, 2019",16.0,156,,853.7,16:04,Men,,65 to 74 kg
+98,# Rummelator 🇩🇪,"May 15, 2024",16.0,130,231,853.7,16:04,Men,45 to 54,65 to 74 kg
+99,Alexander Fraiss,"Apr 5, 2025",16.0,166,277,853.7,16:04,Men,20 to 24,75 to 84 kg
+100,Hansi Huber,"May 1, 2022",15.9,126,,851.0,16:07,Men,45 to 54,
+101,Tom Kbgr 🏴‍☠️,"Apr 12, 2020",15.9,,,848.4,16:10,,,
+102,wolfgang spatt,"May 11, 2024",15.9,,,847.5,16:11,Men,45 to 54,65 to 74 kg
+103,Elin Axelsson-Ekker,"Aug 19, 2015",15.8,153,,843.2,16:16,Women,35 to 44,55 to 64 kg
+104,Alfred Mosbacher,"Jul 29, 2023",15.8,150,244,842.3,16:17,Men,55 to 64,75 to 84 kg
+105,David Mayrhofer,"Mar 17, 2022",15.7,168,305,840.6,16:19,Men,35 to 44,95 kg to 104 kg
+106,Erik Haselsteiner,"May 7, 2016",15.7,,220,838.0,16:22,Men,35 to 44,65 to 74 kg
+107,Christian Skof,"May 18, 2022",15.7,138,226,838.0,16:22,Men,,65 to 74 kg
+108,Thomas Gastecker,"May 13, 2018",15.7,121,,837.2,16:23,,,
+109,Michael Ripfl,"May 7, 2016",15.7,,,835.5,16:25,Men,45 to 54,85 to 94 kg
+110,fido p,"Oct 25, 2020",15.6,158,,834.6,16:26,Men,,85 to 94 kg
+111,Jürgen Kienberger,"May 8, 2016",15.6,154,,833.8,16:27,Men,,65 to 74 kg
+112,Franz Wimmer,"Aug 12, 2023",15.6,162,255,833.8,16:27,Men,45 to 54,54 kg and under
+113,Matthias Österreicher,"Feb 7, 2015",15.6,139,,831.3,16:30,Men,25 to 34,85 to 94 kg
+114,Marko Pumhösel,"May 10, 2024",15.6,,,831.3,16:30,Men,25 to 34,75 to 84 kg
+115,Arthur Nonymous,"Jul 10, 2024",15.5,,,829.6,16:32,Men,35 to 44,
+116,Sylke Helperstorfer,"Jun 28, 2025",15.5,,194,829.6,16:32,Women,35 to 44,
+117,Helmut Schachner,"Jul 12, 2022",15.5,119,,828.8,16:33,Men,25 to 34,54 kg and under
+118,Helmut Schachner,"Jul 12, 2022",15.5,119,,828.8,16:33,Men,25 to 34,54 kg and under
+119,Luki Weissensteiner,"Jun 15, 2025",15.5,134,243,828.8,16:33,Men,25 to 34,75 to 84 kg
+120,Egon Gigele,"Oct 15, 2021",15.5,,,827.1,16:35,Men,55 to 64,54 kg and under
+121,Christian Dürnbeck,"Sep 6, 2022",15.5,158,,825.4,16:37,Men,45 to 54,
+122,Haxel Hekker,"Aug 19, 2015",15.4,161,,822.1,16:41,Men,35 to 44,65 to 74 kg
+123,Rene Bechter,"Aug 5, 2024",15.4,93,,822.1,16:41,Men,45 to 54,75 to 84 kg
+124,Sabine Gastecker,"May 13, 2018",15.3,137,,818.9,16:45,Women,45 to 54,55 to 64 kg
+125,Felix Schelberger,"Jun 25, 2021",15.3,,,817.2,16:47,Men,20 to 24,54 kg and under
+126,Matthias P.,"Aug 21, 2023",15.3,160,229,817.2,16:47,Men,35 to 44,75 to 84 kg
+127,Maximilian Fohringer,"Aug 9, 2022",15.2,,,814.0,16:51,Men,25 to 34,75 to 84 kg
+128,Michi Daxbacher,"Jul 5, 2025",15.2,170,,814.0,16:51,Men,25 to 34,65 to 74 kg
+129,Anna Haider,"Mar 12, 2022",15.2,168,,810.8,16:55,Women,25 to 34,55 to 64 kg
+130,Holger Z.,"Jul 26, 2020",15.2,133,,809.2,16:57,Men,45 to 54,65 to 74 kg
+131,Matteo Semmelmeyer,"Apr 28, 2025",15.2,175,,809.2,16:57,Men,20 to 24,75 to 84 kg
+132,Heinz Blaschitz,"Jun 14, 2024",15.1,154,191,808.4,16:58,Men,55 to 64,65 to 74 kg
+133,Pippin Bär,"Sep 4, 2025",15.1,161,,808.4,16:58,Men,19 and under,
+134,Jonathan Gutsjahr,"Sep 19, 2025",15.1,,241,808.4,16:58,Men,25 to 34,
+135,Rudi Gruber,"Sep 26, 2023",15.1,,,807.6,16:59,Men,45 to 54,65 to 74 kg
+136,Gregor Weinauer,"Jan 9, 2018",15.1,,,806.8,17:00,Men,35 to 44,65 to 74 kg
+137,Robert Blaimauer,"Apr 20, 2019",15.1,131,,806.8,17:00,Men,,65 to 74 kg
+138,Julian Piller,"Jun 18, 2024",15.1,,222,806.8,17:00,Men,19 and under,65 to 74 kg
+139,Christian Gangl,"May 10, 2018",15.1,140,,806.0,17:01,Men,25 to 34,65 to 74 kg
+140,Dominik Leimhofer,"Jun 26, 2022",15.1,152,,806.0,17:01,Men,25 to 34,54 kg and under
+141,RIH 1972,"Oct 17, 2018",15.1,143,,805.2,17:02,Men,65 to 69,54 kg and under
+142,Erwin Zierler,"Sep 9, 2018",15.1,148,,804.5,17:03,Men,65 to 69,65 to 74 kg
+143,Franz Ohrenhofer 🇦🇹,"Sep 6, 2022",15.1,,243,804.5,17:03,Men,55 to 64,75 to 84 kg
+144,Wolfgang Bauer,"Jun 15, 2022",15.0,,,802.9,17:05,Men,35 to 44,85 to 94 kg
+145,Stefano B.,"Sep 28, 2016",15.0,145,,801.3,17:07,Men,,65 to 74 kg
+146,Christoph Zaba,"Apr 17, 2021",15.0,164,,798.2,17:11,Men,35 to 44,85 to 94 kg
+147,Maxi Waldbauer,"Jul 30, 2025",14.9,,,796.7,17:13,Men,20 to 24,65 to 74 kg
+148,Rudolf Bruckner,"Aug 13, 2025",14.9,,43,796.7,17:13,Men,45 to 54,75 to 84 kg
+149,Oliver Jambrits,"Jun 1, 2020",14.9,159,,795.9,17:14,Men,45 to 54,75 to 84 kg
+150,Wolfgang Schelberger,"Apr 28, 2024",14.9,,,795.9,17:14,Men,55 to 64,75 to 84 kg
+151,Klaus Häußle,"Jul 30, 2016",14.9,161,,795.1,17:15,Men,45 to 54,65 to 74 kg
+152,Martin Kitzwögerer,"Jul 20, 2018",14.8,162,,791.3,17:20,Men,25 to 34,75 to 84 kg
+153,Bernhard Rester,"Apr 28, 2024",14.8,,225,789.0,17:23,Men,35 to 44,85 to 94 kg
+154,Michael Bernhard,"Aug 12, 2024",14.8,124,236,788.3,17:24,Men,55 to 64,75 to 84 kg
+155,Richard Walter 🦊,"Mar 12, 2025",14.8,143,215,787.5,17:25,Men,45 to 54,75 to 84 kg
+156,Reinhard Rammerstorfer,"Aug 15, 2020",14.7,160,,786.8,17:26,Men,45 to 54,65 to 74 kg
+157,Thomas Gansch,"Dec 27, 2015",14.7,,,786.0,17:27,Men,35 to 44,75 to 84 kg
+158,Theobald Z,"Oct 29, 2022",14.7,130,213,785.3,17:28,Men,55 to 64,65 to 74 kg
+159,Lukas Enengel,"Jun 20, 2019",14.7,,,783.0,17:31,Men,25 to 34,
+160,Oliver BAUMANN,"Sep 28, 2016",14.6,,,781.5,17:33,Men,45 to 54,95 kg to 104 kg
+161,Gerald Teufelhofer,"May 10, 2025",14.6,134,,781.5,17:33,Men,55 to 64,75 to 84 kg
+162,Andreas Tiefenböck,"Jul 20, 2025",14.6,132,202,781.5,17:33,Men,35 to 44,65 to 74 kg
+163,Ferdinand Kleemann,"Jun 6, 2020",14.6,,,780.1,17:35,Men,35 to 44,75 to 84 kg
+164,Leander Peichl,"Sep 17, 2023",14.6,145,,780.1,17:35,Men,45 to 54,75 to 84 kg
+165,Reinhard Tiefenböck,"Jul 20, 2025",14.6,137,205,780.1,17:35,Men,35 to 44,65 to 74 kg
+166,Jakob Wagenhofer [HRTLND],"Aug 28, 2019",14.6,171,,779.3,17:36,Men,19 and under,75 to 84 kg
+167,Heinrich Holzfelge,"Oct 2, 2021",14.6,138,244,778.6,17:37,Men,45 to 54,65 to 74 kg
+168,Aleš Kuba,"May 10, 2025",14.6,,,778.6,17:37,Men,45 to 54,65 to 74 kg
+169,Manfred Winter,"Jun 17, 2025",14.6,142,,777.1,17:39,Men,55 to 64,65 to 74 kg
+170,Cornelia Holland,"May 18, 2020",14.5,,190,775.6,17:41,Women,19 and under,55 to 64 kg
+171,Sandra Slaby,"Aug 9, 2022",14.5,,183,772.7,17:45,Women,35 to 44,55 to 64 kg
+172,Michael Srb,"Apr 21, 2019",14.4,145,297,769.1,17:50,Men,25 to 34,54 kg and under
+173,Reinhard Ballwein,"Aug 14, 2020",14.4,,,769.1,17:50,Men,35 to 44,75 to 84 kg
+174,Eberhard Bayerl,"May 1, 2019",14.4,,265,767.7,17:52,Men,35 to 44,54 kg and under
+175,Michael U.,"Sep 30, 2017",14.4,,,767.0,17:53,Men,55 to 64,75 to 84 kg
+176,Richard Tanzer,"Jun 10, 2023",14.4,135,213,767.0,17:53,Men,45 to 54,75 to 84 kg
+177,Josef Brandstetter,"Aug 11, 2024",14.4,,188,766.3,17:54,Men,45 to 54,
+178,Harald Forsthofer,"Jul 13, 2024",14.3,,222,765.5,17:55,Men,35 to 44,
+179,Didier Vanhoutte,"Jul 23, 2020",14.3,,,762.7,17:59,Men,55 to 64,75 to 84 kg
+180,Christian Stocki,"Apr 22, 2023",14.3,147,245,762.7,17:59,Men,45 to 54,75 to 84 kg
+181,Johannes H,"Aug 18, 2024",14.3,,,762.7,17:59,Men,19 and under,75 to 84 kg
+182,Sascha Holasek,"Jul 20, 2025",14.3,,207,762.7,17:59,Men,25 to 34,
+183,Martin Muehl,"May 27, 2017",14.3,163,,761.3,18:01,Men,35 to 44,75 to 84 kg
+184,Hans Mittelhofer,"May 10, 2018",14.2,127,,760.6,18:02,Men,55 to 64,75 to 84 kg
+185,Simon Höfer,"Jul 15, 2018",14.2,147,,760.6,18:02,Men,45 to 54,85 to 94 kg
+186,Ferdinand Marton,"Jul 4, 2024",14.2,,267,759.9,18:03,Men,45 to 54,65 to 74 kg
+187,Bernhard Müllauer,"Jul 4, 2024",14.2,,301,759.9,18:03,Men,35 to 44,
+188,Ronald Pohl,"Sep 18, 2024",14.2,138,187,759.9,18:03,Men,,55 to 64 kg
+189,Dietmar Stöger,"Sep 8, 2021",14.2,145,,758.5,18:05,Men,45 to 54,
+190,Heidi Stütz,"Jun 28, 2025",14.2,,,757.8,18:06,Women,35 to 44,54 kg and under
+191,Toni Hintermeier,"May 6, 2017",14.2,152,234,756.4,18:08,Men,25 to 34,85 to 94 kg
+192,Andreas Landstetter,"Aug 30, 2021",14.2,141,238,756.4,18:08,Men,45 to 54,85 to 94 kg
+193,Manuel Krenn,"May 8, 2021",14.2,156,,755.7,18:09,Men,25 to 34,65 to 74 kg
+194,Jeremias Stadlmair,"Jul 31, 2021",14.2,,,755.7,18:09,Men,25 to 34,75 to 84 kg
+195,Miro P66,"Jun 26, 2011",14.1,159,240,755.0,18:10,Men,25 to 34,85 to 94 kg
+196,Ben j,"Jul 28, 2020",14.1,,,753.6,18:12,Men,25 to 34,85 to 94 kg
+197,Daniel Weishaupt,"Jun 27, 2023",14.1,,11,752.9,18:13,Men,35 to 44,54 kg and under
+198,Raphael Gallistl,"Aug 2, 2023",14.1,,252,752.2,18:14,Men,25 to 34,
+199,Andreas NUSS (Kette Links 🇦🇹),"Oct 1, 2017",14.1,153,,751.6,18:15,Men,45 to 54,85 to 94 kg
+200,Juergen Zehetner,"Jul 25, 2025",14.1,,,750.9,18:16,Men,35 to 44,65 to 74 kg
+201,Daniel Binder,"Jul 25, 2025",14.1,,,750.9,18:16,Men,35 to 44,75 to 84 kg
+202,Martina Kugler,"Apr 29, 2022",14.1,153,,750.2,18:17,Women,35 to 44,
+203,Daniel Hörth,"Jan 4, 2023",14.0,140,,749.5,18:18,Men,45 to 54,65 to 74 kg
+204,Tobias Öhlinger,"Aug 17, 2020",14.0,,,748.8,18:19,Men,25 to 34,65 to 74 kg
+205,Clemens Jacubetz,"Jul 27, 2025",14.0,,225,748.8,18:19,Men,25 to 34,65 to 74 kg
+206,Lukáš Klement,"Oct 18, 2024",14.0,135,,746.8,18:22,Men,25 to 34,
+207,Markus B,"Aug 20, 2023",14.0,154,,746.1,18:23,Men,45 to 54,75 to 84 kg
+208,Michael Astleitner,"Jun 21, 2025",14.0,,194,746.1,18:23,Men,35 to 44,75 to 84 kg
+209,Viktor Šťástka,"Oct 24, 2015",14.0,,,745.4,18:24,Men,35 to 44,75 to 84 kg
+210,Vladimír Šťástka,"Oct 24, 2015",14.0,,,745.4,18:24,Men,,75 to 84 kg
+211,Otto Putz,"Aug 8, 2023",14.0,147,192,744.8,18:25,Men,55 to 64,65 to 74 kg
+212,Maximilian Binder,"Jul 5, 2025",13.9,,,742.1,18:29,,,
+213,Herbert Helbig,"Sep 21, 2021",13.9,139,,740.7,18:31,Men,45 to 54,75 to 84 kg
+214,Josef Viellehner,"Jul 27, 2024",13.9,,197,740.1,18:32,Men,35 to 44,65 to 74 kg
+215,Martin Neu,"Jun 28, 2020",13.9,,,739.4,18:33,Men,,85 to 94 kg
+216,Michael Nieder,"Aug 9, 2024",13.8,166,267,738.7,18:34,Men,35 to 44,85 to 94 kg
+217,Mario Tomassovits,"Jul 26, 2014",13.8,143,,738.1,18:35,Men,45 to 54,75 to 84 kg
+218,Paul Seisenbacher,"Jun 19, 2021",13.8,,,738.1,18:35,Men,35 to 44,85 to 94 kg
+219,Christof Manz,"Jul 4, 2024",13.8,,,736.8,18:37,Men,25 to 34,85 to 94 kg
+220,Heinz Puschacher,"Jul 13, 2022",13.8,150,,736.1,18:38,Men,55 to 64,75 to 84 kg
+221,Ronald Rehak,"Jul 4, 2024",13.8,,,736.1,18:38,Men,55 to 64,75 to 84 kg
+222,Marco Freudenthaler,"Aug 29, 2020",13.8,,,735.4,18:39,Men,35 to 44,75 to 84 kg
+223,Markus Malousek,"Aug 1, 2015",13.8,140,174,734.8,18:40,Men,45 to 54,55 to 64 kg
+224,Simon Zeitlhofer,"Sep 21, 2025",13.8,150,,734.8,18:40,Men,20 to 24,
+225,Tamara S.,"Jun 20, 2021",13.8,162,152,734.1,18:41,Women,45 to 54,65 to 74 kg
+226,Lukas Schüller,"Jun 5, 2025",13.8,174,,734.1,18:41,,,
+227,Peter Speiser,"Apr 18, 2019",13.7,104,,731.5,18:45,Men,35 to 44,75 to 84 kg
+228,Roland Bischof,"Mar 22, 2019",13.7,164,204,730.2,18:47,Men,25 to 34,75 to 84 kg
+229,Marius L,"Jul 16, 2022",13.7,157,187,729.6,18:48,Men,45 to 54,55 to 64 kg
+230,Markus Fischer,"Aug 25, 2024",13.7,145,201,729.6,18:48,Men,45 to 54,
+231,Peter Gansch,"Jul 16, 2022",13.7,159,,728.9,18:49,Men,45 to 54,75 to 84 kg
+232,Armin Häusler,"Jun 6, 2025",13.7,,,728.9,18:49,Men,55 to 64,
+233,Mike Sandler,"Sep 7, 2015",13.6,,,727.6,18:51,Men,25 to 34,65 to 74 kg
+234,Nikolaus G,"Jul 16, 2024",13.6,154,187,725.1,18:55,Men,25 to 34,65 to 74 kg
+235,Stefan R.,"Sep 12, 2020",13.6,151,,724.4,18:56,Men,25 to 34,75 to 84 kg
+236,Thomas Fallmann,"Jul 4, 2024",13.6,171,220,723.8,18:57,Men,25 to 34,75 to 84 kg
+237,Thomas Reisinger,"Sep 12, 2020",13.5,,,722.5,18:59,Men,25 to 34,54 kg and under
+238,Fabsi Hornaus,"Mar 23, 2025",13.5,,209,720.0,19:03,Men,19 and under,
+239,thomas topf,"Jul 4, 2024",13.5,,,719.4,19:04,,,
+240,Al Ahniemal,"Jun 6, 2020",13.4,,,716.9,19:08,Men,45 to 54,75 to 84 kg
+241,Michael Vogler,"Aug 27, 2022",13.4,144,,716.9,19:08,Men,35 to 44,65 to 74 kg
+242,Stefan Zemlizka,"Sep 21, 2025",13.4,145,200,716.9,19:08,Men,35 to 44,75 to 84 kg
+243,Peter Mick,"Jun 14, 2025",13.4,90,,716.2,19:09,Men,55 to 64,85 to 94 kg
+244,Daniel Stoeger,"Sep 4, 2025",13.4,158,203,716.2,19:09,Men,25 to 34,65 to 74 kg
+245,Patrick Lumplecker,"Jul 9, 2022",13.4,140,198,715.6,19:10,Men,25 to 34,65 to 74 kg
+246,Florian König,"May 20, 2024",13.4,,199,715.6,19:10,Men,,75 to 84 kg
+247,CURTE .,"Jul 27, 2024",13.4,,191,715.6,19:10,Men,45 to 54,65 to 74 kg
+248,Günther Baumgartner,"Oct 1, 2017",13.4,151,,713.8,19:13,Men,45 to 54,65 to 74 kg
+249,Edi Schwarz,"Jun 19, 2023",13.4,,,713.8,19:13,Men,55 to 64,65 to 74 kg
+250,Hati R,"May 27, 2025",13.4,163,,713.8,19:13,,,
+251,Stefan Haas,"Oct 12, 2024",13.4,,,713.1,19:14,Men,45 to 54,
+252,Gerhard Stockinger,"May 1, 2023",13.3,116,201,711.9,19:16,Men,45 to 54,65 to 74 kg
+253,Raymond Ginterstorfer,"Aug 11, 2024",13.3,155,,711.9,19:16,Men,35 to 44,75 to 84 kg
+254,Ernst Schweiger,"May 17, 2020",13.3,135,,710.1,19:19,Men,55 to 64,75 to 84 kg
+255,Armin Häusler,"Jun 16, 2021",13.3,,,709.4,19:20,Men,55 to 64,54 kg and under
+256,Fabian H,"Sep 18, 2025",13.3,,,709.4,19:20,,,
+257,Paul Splechtna,"Jul 16, 2024",13.3,,,708.8,19:21,Men,20 to 24,65 to 74 kg
+258,Livush _,"Oct 9, 2020",13.2,,,705.2,19:27,Women,25 to 34,55 to 64 kg
+259,Franz Wimmer,"Jul 19, 2023",13.2,,233,704.0,19:29,,,
+260,Robert Stoll,"Jul 8, 2023",13.2,,,702.8,19:31,Men,45 to 54,
+261,Josef Schimatschek,"Aug 18, 2023",13.2,,,702.2,19:32,Men,65 to 69,65 to 74 kg
+262,Herwig W. Schauer,"Jul 18, 2017",13.1,,,701.6,19:33,Men,,75 to 84 kg
+263,Andreas Bayr,"Jul 20, 2016",13.1,152,,701.6,19:33,Men,45 to 54,65 to 74 kg
+264,Thomas Esberger,"May 20, 2024",13.1,,212,701.0,19:34,Men,45 to 54,65 to 74 kg
+265,Johann Endl,"May 20, 2024",13.1,,,701.0,19:34,Men,45 to 54,
+266,Robert A,"Jul 10, 2020",13.1,119,,699.2,19:37,Men,55 to 64,65 to 74 kg
+267,Manfred Huber,"Jul 27, 2024",13.0,126,,696.2,19:42,Men,55 to 64,65 to 74 kg
+268,Lucian Badescu,"Aug 17, 2019",13.0,,,695.7,19:43,Men,35 to 44,85 to 94 kg
+269,Rens Friso,"Aug 22, 2023",13.0,,,695.7,19:43,Men,19 and under,55 to 64 kg
+270,Laura Rumpl,"Mar 30, 2019",13.0,145,146,693.3,19:47,Women,20 to 24,54 kg and under
+271,Jakob Gastecker,"May 18, 2020",13.0,,,692.7,19:48,Men,20 to 24,65 to 74 kg
+272,Ulrich Bierbaumer,"Jun 7, 2021",13.0,145,203,692.1,19:49,Men,55 to 64,75 to 84 kg
+273,Maximilian Schmid,"Jun 15, 2025",12.9,126,195,691.0,19:51,Men,25 to 34,75 to 84 kg
+274,Tanja M,"Aug 7, 2024",12.9,,,688.7,19:55,Women,25 to 34,
+275,Elisa Beth,"Mar 26, 2017",12.9,,,687.5,19:57,Women,25 to 34,
+276,Harald Bicker,"Aug 27, 2022",12.9,168,,686.9,19:58,Men,35 to 44,65 to 74 kg
+277,Jan Leitzinger,"Aug 19, 2023",12.9,152,,686.9,19:58,Men,20 to 24,
+278,Ildikó Szomor,"May 13, 2018",12.9,135,,686.4,19:59,Women,35 to 44,55 to 64 kg
+279,Viktoria Preitensteiner,"Sep 27, 2025",12.9,168,,686.4,19:59,Women,25 to 34,55 to 64 kg
+280,Piotr Tysar,"Jun 16, 2018",12.8,,,685.8,20:00,Men,35 to 44,65 to 74 kg
+281,Gerhard Fischer,"Aug 3, 2024",12.8,,,684.7,20:02,Men,45 to 54,
+282,Michal Šmahel,"Oct 18, 2024",12.8,,0,684.7,20:02,Men,25 to 34,65 to 74 kg
+283,Irmi Ballwein,"May 9, 2024",12.8,,,683.5,20:04,Women,45 to 54,
+284,Paolo Beroggio,"Apr 29, 2021",12.8,,,682.4,20:06,Men,45 to 54,75 to 84 kg
+285,Roman Michejda,"Apr 20, 2025",12.8,138,,682.4,20:06,Men,35 to 44,65 to 74 kg
+286,Torsten .,"Aug 22, 2020",12.8,,,681.8,20:07,Men,25 to 34,85 to 94 kg
+287,Herbert Sandwieser,"Aug 23, 2024",12.8,129,162,681.8,20:07,Men,45 to 54,65 to 74 kg
+288,jm 521,"Jul 10, 2020",12.7,130,,680.1,20:10,Men,55 to 64,75 to 84 kg
+289,Josef Schimatschek,"Jul 15, 2018",12.7,,,677.9,20:14,,,
+290,Florian Deibl,"Aug 16, 2018",12.7,,,677.3,20:15,Men,25 to 34,55 to 64 kg
+291,Werner Veits,"Sep 20, 2020",12.7,115,,677.3,20:15,Men,55 to 64,75 to 84 kg
+292,Heinz Kalusok,"Jul 27, 2024",12.7,,,676.8,20:16,Men,65 to 69,75 to 84 kg
+293,Rainer Machherndl,"May 11, 2025",12.5,129,164,669.6,20:29,Men,45 to 54,65 to 74 kg
+294,Roland Höbling,"Jul 22, 2025",12.5,145,,669.6,20:29,Men,,75 to 84 kg
+295,Otto Hofer,"Mar 20, 2020",12.5,158,,669.1,20:30,Men,35 to 44,85 to 94 kg
+296,Thomas Heumüller,"May 26, 2023",12.5,,,668.0,20:32,Men,35 to 44,75 to 84 kg
+297,Karl-Heinz Flair,"Aug 15, 2018",12.5,,,667.4,20:33,Men,35 to 44,85 to 94 kg
+298,Tobias Eberl,"Oct 5, 2024",12.5,,,667.4,20:33,Men,25 to 34,75 to 84 kg
+299,Stefanie Brts,"Aug 24, 2023",12.5,,,666.9,20:34,Women,25 to 34,
+300,Lorenz Probst,"Jun 23, 2024",12.5,,205,665.3,20:37,Men,35 to 44,75 to 84 kg
+301,Alexandra No,"Apr 29, 2025",12.5,166,,664.7,20:38,Women,25 to 34,55 to 64 kg
+302,Martin Fürni,"Sep 1, 2025",12.4,139,,662.1,20:43,Men,45 to 54,75 to 84 kg
+303,Strava Athlete,"Jun 21, 2025",12.4,,,660.5,20:46,,,
+304,Elke Kogler,"Nov 1, 2023",12.4,129,,659.4,20:48,Women,45 to 54,55 to 64 kg
+305,Marco Schuller,"Sep 12, 2017",12.3,136,,658.4,20:50,Men,25 to 34,85 to 94 kg
+306,Karl Gugerel,"May 23, 2020",12.3,,,658.4,20:50,Men,35 to 44,95 kg to 104 kg
+307,Hans Niederwimmer,"Sep 8, 2024",12.3,150,,658.4,20:50,Men,45 to 54,75 to 84 kg
+308,J Laurence,"Jul 4, 2014",12.3,,,657.3,20:52,Men,35 to 44,95 kg to 104 kg
+309,"Tomas ""Bobek"" Vobecky","Oct 18, 2024",12.3,,,656.8,20:53,Men,45 to 54,65 to 74 kg
+310,Jürgen WASER,"Jun 28, 2025",12.3,,,656.3,20:54,Men,45 to 54,
+311,Jürgen Stütz,"Jun 28, 2025",12.3,142,,655.7,20:55,Men,45 to 54,75 to 84 kg
+312,Markus Fiedler,"May 13, 2017",12.3,168,164,654.7,20:57,Men,35 to 44,65 to 74 kg
+313,Andreas Bierbaumer,"Sep 29, 2023",12.2,162,227,651.1,21:04,Men,55 to 64,95 kg to 104 kg
+314,Samuel Stelzer,"Jul 6, 2024",12.1,,,647.0,21:12,Men,25 to 34,75 to 84 kg
+315,Andreas Grillenberger,"Mar 9, 2025",12.1,143,174,647.0,21:12,Men,45 to 54,75 to 84 kg
+316,Michael Moldaschl,"Jun 29, 2019",12.1,,,646.5,21:13,Men,25 to 34,75 to 84 kg
+317,Markus Hofstätter,"Jul 27, 2021",12.1,,,646.5,21:13,Men,45 to 54,85 to 94 kg
+318,Tamás Tóth,"Aug 21, 2020",12.1,,,643.4,21:19,Men,55 to 64,65 to 74 kg
+319,Andreas Gloimueller,"Aug 15, 2022",12.1,,174,643.4,21:19,Men,35 to 44,65 to 74 kg
+320,Stefanie Kranzl,"Jun 9, 2025",12.0,153,,641.9,21:22,Women,35 to 44,
+321,Michael Rameder,"Jul 15, 2021",12.0,,,641.4,21:23,Men,35 to 44,65 to 74 kg
+322,Stefan H.,"Jun 19, 2021",12.0,145,,640.4,21:25,Men,45 to 54,75 to 84 kg
+323,Mario Fahrnberger,"May 23, 2024",11.9,,,637.5,21:31,Men,25 to 34,
+324,Kurt Hafner,"Jul 27, 2024",11.9,133,173,635.5,21:35,Men,55 to 64,85 to 94 kg
+325,Josef Watschka,"Nov 7, 2020",11.9,168,,633.5,21:39,Men,45 to 54,85 to 94 kg
+326,Wolfi Czernin,"Jul 27, 2025",11.9,,,633.5,21:39,Men,25 to 34,
+327,Petra Janíčková,"May 22, 2022",11.9,156,,633.0,21:40,Women,20 to 24,54 kg and under
+328,Andreas Dorrer,"Oct 3, 2025",11.8,,,630.1,21:46,Men,25 to 34,
+329,Alex Biked Cake,"Jul 4, 2014",11.8,,,629.2,21:48,Women,25 to 34,65 to 74 kg
+330,Thomas Dierkes,"Jul 5, 2021",11.8,,,628.7,21:49,Men,45 to 54,
+331,Daniel Pfeiffer,"Oct 31, 2021",11.8,153,,628.2,21:50,Men,25 to 34,75 to 84 kg
+332,Max Kaiser,"Jun 28, 2016",11.7,155,,626.3,21:54,Men,45 to 54,65 to 74 kg
+333,Alexander Huber,"Mar 9, 2025",11.7,121,160,623.5,22:00,Men,45 to 54,65 to 74 kg
+334,Martin Baureder,"Aug 15, 2020",11.6,125,,621.6,22:04,Men,35 to 44,65 to 74 kg
+335,Stefan Enzenhofer,"Jun 1, 2025",11.6,129,,620.6,22:06,Men,45 to 54,85 to 94 kg
+336,Patrick Bannwarth,"Sep 20, 2020",11.6,163,,618.3,22:11,Men,19 and under,54 kg and under
+337,Rene Immler,"Sep 11, 2019",11.6,162,,617.4,22:13,Men,35 to 44,65 to 74 kg
+338,Mario Huber,"Jun 18, 2022",11.6,58,,616.9,22:14,Men,35 to 44,75 to 84 kg
+339,Martin Lenhardt,"Oct 27, 2024",11.5,,214,616.4,22:15,Men,35 to 44,85 to 94 kg
+340,Christopher Piccardi,"Aug 6, 2015",11.5,158,,616.0,22:16,Men,25 to 34,75 to 84 kg
+341,Strava Athlete,"Apr 29, 2022",11.5,,,615.5,22:17,,,
+342,mario kammerer,"Mar 23, 2024",11.5,165,,614.6,22:19,Men,35 to 44,75 to 84 kg
+343,Gerhard S. (),"May 8, 2023",11.5,111,,613.7,22:21,Men,55 to 64,85 to 94 kg
+344,Christian Huber,"Jun 6, 2020",11.5,149,,612.8,22:23,Men,45 to 54,105 kg to 114 kg
+345,Manuel Poschmaier Ⓥ,"Aug 13, 2019",11.5,157,,612.8,22:23,Men,25 to 34,75 to 84 kg
+346,Paul Johnson,"Sep 21, 2025",11.5,,,612.3,22:24,Men,55 to 64,
+347,Dominik Häusler,"Jun 8, 2024",11.5,,,611.4,22:26,Men,35 to 44,
+348,U*Schi 🎿🚴‍♀️⛰️,"Sep 18, 2025",11.5,140,,611.4,22:26,Women,45 to 54,54 kg and under
+349,Siegfried Frewein,"Aug 26, 2017",11.4,,,609.1,22:31,Men,,54 kg and under
+350,Jürgen Profoß,"Jun 19, 2023",11.4,153,234,606.0,22:38,Men,45 to 54,105 kg to 114 kg
+351,Johann Puchinger,"Jul 28, 2016",11.3,150,,605.6,22:39,Men,45 to 54,85 to 94 kg
+352,Michael Obernberger,"Sep 8, 2018",11.3,172,,603.8,22:43,Men,35 to 44,85 to 94 kg
+353,Johann Hahn,"Jun 6, 2020",11.3,140,154,602.9,22:45,Men,45 to 54,65 to 74 kg
+354,Manfred Gschoßmann,"Aug 6, 2020",11.3,116,,601.1,22:49,Men,55 to 64,75 to 84 kg
+355,Paul Vanrespaille,"Jun 27, 2023",11.2,,,598.5,22:55,Men,55 to 64,75 to 84 kg
+356,Rainer Fohringer,"Jul 22, 2023",11.2,,,598.5,22:55,Men,45 to 54,
+357,Regina Weinauer,"May 23, 2023",11.1,149,,594.2,23:05,Women,35 to 44,54 kg and under
+358,Dominik Rappaport,"Oct 12, 2025",11.1,151,146,590.4,23:14,Men,45 to 54,55 to 64 kg
+359,geos 268,"Mar 23, 2025",11.1,125,,589.9,23:15,Men,45 to 54,105 kg to 114 kg
+360,Akos Pozsgai,"Jun 21, 2017",10.9,,,584.1,23:29,Men,35 to 44,54 kg and under
+361,Alexandra Binder,"Apr 21, 2025",10.9,137,150,582.0,23:34,Women,45 to 54,
+362,Florian Egert,"Jul 15, 2023",10.9,,,581.2,23:36,Men,20 to 24,65 to 74 kg
+363,Walter Hoertenhuber,"Jul 30, 2018",10.9,,,580.4,23:38,Men,55 to 64,65 to 74 kg
+364,Richard Weiländer,"May 13, 2018",10.8,142,,579.1,23:41,,,
+365,Gerhard Prandstätter,"May 22, 2020",10.8,117,,579.1,23:41,Men,55 to 64,
+366,klemens faffelberger,"Aug 23, 2019",10.8,,,575.9,23:49,Men,25 to 34,85 to 94 kg
+367,da ernstl,"Jul 29, 2023",10.8,142,186,575.5,23:50,Men,45 to 54,75 to 84 kg
+368,Samuel Lembacher,"Oct 4, 2025",10.8,,,575.5,23:50,Men,19 and under,
+369,Martin Punz,"Jun 10, 2015",10.8,,,574.7,23:52,Men,55 to 64,75 to 84 kg
+370,Martin Rosenberger,"Jun 6, 2023",10.7,,,570.3,24:03,,,
+371,Karl Adler,"Jul 17, 2022",10.6,155,,568.0,24:09,Men,45 to 54,115 kg and over
+372,Margit Penzenauer,"Aug 26, 2025",10.6,,,567.2,24:11,Women,45 to 54,
+373,Claus Sandler,"Jul 12, 2025",10.6,,,566.4,24:13,Men,20 to 24,75 to 84 kg
+374,Michael Winterspacher,"Sep 22, 2021",10.6,161,,565.2,24:16,Men,20 to 24,65 to 74 kg
+375,Franziska Hro,"Jul 13, 2025",10.6,,119,564.1,24:19,Women,35 to 44,
+376,Peter Fröschl,"Jul 13, 2023",10.6,145,,563.7,24:20,Men,45 to 54,75 to 84 kg
+377,Gabriele Hörlesberger,"May 27, 2024",10.4,,,555.7,24:41,,,
+378,Thomas Kraupp,"Oct 22, 2023",10.4,,,553.8,24:46,Men,35 to 44,95 kg to 104 kg
+379,Lukas Heindl,"Jul 30, 2025",10.4,,,553.1,24:48,Men,25 to 34,
+380,Werner Röcklinger,"May 10, 2022",10.3,142,,551.6,24:52,Men,45 to 54,
+381,Werner Hoffmann,"Aug 28, 2020",10.3,,,549.7,24:57,Men,35 to 44,85 to 94 kg
+382,Daniela Übellacker,"Jun 11, 2023",10.3,133,,549.7,24:57,Women,25 to 34,54 kg and under
+383,Klaus Höfinger,"Nov 14, 2020",10.3,,,548.6,25:00,Men,25 to 34,
+384,Fredi Belavić,"Sep 14, 2025",10.1,156,,539.6,25:25,Men,55 to 64,95 kg to 104 kg
+385,@lfred Muhrer,"Sep 23, 2017",10.1,,,537.9,25:30,Men,45 to 54,75 to 84 kg
+386,Alfred Muhrer,"Sep 23, 2017",10.1,,,537.9,25:30,Men,45 to 54,
+387,michi -,"Feb 22, 2020",10.1,,,537.5,25:31,Men,35 to 44,95 kg to 104 kg
+388,Fritz Pühringer,"Aug 25, 2025",10.1,134,,536.8,25:33,Men,55 to 64,85 to 94 kg
+389,Ren@te 🙌🏻,"Aug 1, 2018",10.0,,,535.4,25:37,Women,35 to 44,54 kg and under
+390,Niklas Mlcoch,"Sep 28, 2018",10.0,,,534.7,25:39,Men,35 to 44,105 kg to 114 kg
+391,Christoph Halbertschlager,"Jun 11, 2023",10.0,,,534.7,25:39,Men,25 to 34,75 to 84 kg
+392,Edgar Blumauer,"Apr 28, 2018",10.0,145,,533.7,25:42,Men,35 to 44,75 to 84 kg
+393,Friedrich Bauer,"Jun 7, 2020",9.9,,,530.3,25:52,Men,35 to 44,85 to 94 kg
+394,Patrick Hochstöger,"Aug 13, 2021",9.9,,,529.2,25:55,Men,25 to 34,65 to 74 kg
+395,Nina Pachlehner,"Jul 22, 2023",9.9,,,527.5,26:00,Women,25 to 34,
+396,Patricia Heindl,"Aug 1, 2025",9.9,,,526.5,26:03,Women,35 to 44,65 to 74 kg
+397,Maximilian Viehbäck,"Jul 1, 2024",9.8,,,525.5,26:06,Men,25 to 34,
+398,Maria Ze,"Jun 28, 2020",9.8,,,525.2,26:07,Women,25 to 34,54 kg and under
+399,Tadeusz Foltyn,"Jul 5, 2021",9.8,129,,525.2,26:07,Men,,65 to 74 kg
+400,Peter Marcely,"Jul 25, 2024",9.8,,,525.2,26:07,Men,35 to 44,
+401,Daniel Einzinger-Woldrich,"May 25, 2023",9.7,,,520.2,26:22,Men,25 to 34,85 to 94 kg
+402,Jos De Smedt,"Sep 3, 2024",9.7,,,516.6,26:33,Men,65 to 69,75 to 84 kg
+403,Radka Vydrová,"Oct 18, 2024",9.7,152,,516.0,26:35,Women,25 to 34,
+404,Achim Lummer,"Jun 23, 2017",9.6,,,514.4,26:40,Men,55 to 64,85 to 94 kg
+405,Nick Wells,"Jun 28, 2019",9.6,,,514.4,26:40,Men,55 to 64,65 to 74 kg
+406,Karl Zwicker,"Sep 3, 2024",9.6,,,514.4,26:40,Men,55 to 64,85 to 94 kg
+407,Evelyne Sonnleitner,"Mar 7, 2021",9.6,127,,511.5,26:49,Women,35 to 44,54 kg and under
+408,Claudia Hofer,"Mar 7, 2021",9.6,111,,510.5,26:52,Women,45 to 54,
+409,Martin BikeFex,"May 21, 2022",9.5,,,509.6,26:55,Men,45 to 54,85 to 94 kg
+410,Benedikt Hackl,"May 27, 2025",9.5,,,509.3,26:56,Men,20 to 24,
+411,Herbert Fuchs,"Apr 26, 2021",9.5,,,507.7,27:01,Men,55 to 64,85 to 94 kg
+412,Anna Weißensteiner,"Aug 24, 2022",9.4,,,503.3,27:15,Women,25 to 34,55 to 64 kg
+413,Michael Macsek,"Jun 13, 2022",9.4,,,501.2,27:22,Men,25 to 34,54 kg and under
+414,Marek Mašek,"Jul 22, 2023",9.3,,,497.6,27:34,Men,20 to 24,54 kg and under
+415,Franz Grafeneder,"Mar 10, 2024",9.3,143,,497.3,27:35,Men,55 to 64,
+416,Bada Vienna,"Mar 30, 2024",9.3,,,494.9,27:43,Men,35 to 44,65 to 74 kg
+417,Benjamin Schadner,"Jul 25, 2020",9.2,121,,493.4,27:48,Men,25 to 34,75 to 84 kg
+418,Josef Brottrager,"May 31, 2025",9.2,,,492.2,27:52,Men,55 to 64,
+419,Anna Kruk-Michot,"Sep 25, 2021",9.2,,,491.9,27:53,Women,35 to 44,55 to 64 kg
+420,Martin Holland,"Jun 1, 2025",9.2,,,489.0,28:03,Men,55 to 64,
+421,Do Pi,"Mar 30, 2024",9.1,162,,488.1,28:06,Women,35 to 44,
+422,Hubert Kargl,"Aug 2, 2025",9.1,129,143,484.9,28:17,Men,55 to 64,75 to 84 kg
+423,Robert Schenkenfelder,"May 11, 2023",9.0,135,,482.1,28:27,Men,25 to 34,65 to 74 kg
+424,Maria Sattler,"Aug 26, 2025",8.9,155,,475.7,28:50,Women,55 to 64,
+425,Wolfgang Sattler,"Aug 26, 2025",8.9,125,,474.9,28:53,Men,65 to 69,75 to 84 kg
+426,Richard Ringler,"Aug 13, 2025",8.9,67,,472.7,29:01,Men,35 to 44,
+427,Tobi M,"May 13, 2025",8.7,,,467.1,29:22,Men,20 to 24,
+428,Matthias Hofer,"Feb 2, 2020",8.6,,,460.3,29:48,Men,45 to 54,
+429,Manh-Tho Nguyen,"Jun 19, 2025",8.6,127,,458.2,29:56,Men,45 to 54,65 to 74 kg
+430,Andreas Baumgartner,"Jun 28, 2025",8.6,149,,456.9,30:01,Men,55 to 64,
+431,Thomas Meyer,"Jul 22, 2017",8.6,128,191,456.7,30:02,Men,35 to 44,105 kg to 114 kg
+432,Ádám Straszner,"Aug 11, 2024",8.5,,,454.2,30:12,Men,25 to 34,
+433,David FICHTINGER,"Oct 24, 2022",8.5,,,453.9,30:13,Men,20 to 24,75 to 84 kg
+434,Kurt Nebauer,"May 24, 2025",8.5,,,451.4,30:23,Men,70 to 74,65 to 74 kg
+435,Julian Viehberger,"Jul 15, 2020",8.4,,,450.0,30:29,Men,25 to 34,75 to 84 kg
+436,Maria Hofmarcher,"Sep 3, 2019",8.4,,,448.2,30:36,,,
+437,Lukas Schweiger,"Nov 1, 2024",8.3,,,445.6,30:47,Men,25 to 34,
+438,Jacob Putz,"Aug 26, 2025",8.3,,,442.2,31:01,Men,25 to 34,75 to 84 kg
+439,nicola salina,"Jul 17, 2024",8.3,,,441.3,31:05,Men,45 to 54,
+440,Peter Straßmayer,"Apr 3, 2025",8.2,129,,436.1,31:27,Men,65 to 69,75 to 84 kg
+441,Bianca Foramitti,"Aug 10, 2024",8.2,174,,435.9,31:28,Women,25 to 34,
+442,Angela Debo,"May 31, 2021",8.0,,,427.1,32:07,Women,35 to 44,
+443,Manfred Roester,"Mar 2, 2024",7.7,132,,411.1,33:22,Men,45 to 54,
+444,Michael Teufl,"Aug 29, 2021",7.7,136,,409.6,33:29,Men,55 to 64,95 kg to 104 kg
+445,Martina Finkei,"Apr 30, 2023",7.7,,,408.8,33:33,Women,25 to 34,
+446,Kate White,"Sep 29, 2024",7.5,,,402.2,34:06,Women,35 to 44,
+447,mili B.,"Sep 29, 2024",7.5,,,397.9,34:28,Women,35 to 44,
+448,Veronika Schwaiger,"Sep 3, 2021",7.4,163,,397.0,34:33,Women,45 to 54,
+449,Ryder Ryba,"Oct 18, 2024",7.4,,,396.2,34:37,Men,25 to 34,65 to 74 kg
+450,Josef Schrabauer,"Oct 10, 2020",7.4,,,394.1,34:48,,,
+451,Sam Fishwick,"May 24, 2025",7.4,,,393.9,34:49,Men,35 to 44,75 to 84 kg
+452,Marťas 2007,"Jul 3, 2023",7.3,153,,387.3,35:25,,,
+453,Petr Koza,"Aug 14, 2020",7.3,,,387.1,35:26,Men,25 to 34,54 kg and under
+454,Eszter Szegedi,"Mar 9, 2025",7.0,,,375.4,36:32,Women,25 to 34,
+455,Ifj Jakucs Sándor,"Mar 9, 2025",7.0,,,371.7,36:54,Men,25 to 34,
+456,Šimon Kavan,"Aug 28, 2023",7.0,130,,371.2,36:57,Men,20 to 24,65 to 74 kg
+457,Andrzej Mio,"May 4, 2024",6.9,,,368.9,37:11,Men,45 to 54,
+458,Julia Einzinger,"Sep 26, 2021",6.8,,,362.9,37:48,Women,20 to 24,54 kg and under
+459,Paul Kainz,"Jul 8, 2024",6.7,,,359.8,38:07,Men,20 to 24,
+460,Ernst Radner,"May 19, 2024",6.6,,,353.8,38:46,Men,45 to 54,
+461,Roman S,"Jun 28, 2025",6.6,,,352.6,38:54,Men,35 to 44,
+462,Thomas Hahn,"May 27, 2023",6.6,121,,351.7,39:00,Men,55 to 64,65 to 74 kg
+463,Johannes Wagner,"Jun 10, 2022",6.2,,,331.8,41:20,Men,,95 kg to 104 kg
+464,Ching WM,"May 18, 2018",6.2,145,,331.4,41:23,Women,45 to 54,65 to 74 kg
+465,Tong Tong,"May 16, 2018",6.1,,,324.9,42:13,Women,45 to 54,65 to 74 kg
+466,Gerald f.f.f. Biertan,"Aug 12, 2016",6.1,,,324.4,42:17,Men,55 to 64,85 to 94 kg
+467,Fabio De Angelis,"Jul 30, 2025",5.8,,,310.0,44:15,Men,25 to 34,
+468,Melanoite .,"Jun 18, 2021",5.3,,,283.4,48:24,Women,35 to 44,55 to 64 kg
+469,Janine van Drieenhuizen,"Jul 28, 2017",5.3,,,280.4,48:55,Women,45 to 54,55 to 64 kg
+470,St Pa,"May 2, 2024",5.2,,,278.4,49:16,Men,35 to 44,
+471,Petr Špaček,"Jul 28, 2024",5.0,,,267.3,51:19,Men,45 to 54,
+472,Loverowi Jedźmy Razem,"Jul 14, 2021",3.1,,,164.7,1:23:17,Men,25 to 34,
+473,Vaclav Pavlík,"Oct 18, 2024",1.6,85,26,87.9,2:36:01,Men,25 to 34,75 to 84 kg
