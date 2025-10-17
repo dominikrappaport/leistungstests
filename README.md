@@ -33,11 +33,11 @@ in der Programmiersprache [R](https://www.r-project.org/). Zusätzlich findet
 sich eine Zusammenfassung als RMarkdown-Datei.
 
 1. [Trainingsstatistik](https://github.com/dominikrappaport/leistungstests/blob/main/docs/trainingload.md) - Quellcode:
-[https://github.com/dominikrappaport/leistungstests/blob/main/docs/trainingload.Rmd](https://github.com/dominikrappaport/leistungstests/blob/main/docs/trainingload.Rmd)
+[trainingload.Rmd](https://github.com/dominikrappaport/leistungstests/blob/main/docs/trainingload.Rmd)
 2. [Gewichtsverlauf](https://github.com/dominikrappaport/leistungstests/blob/main/docs/weight.md) - Quellcode: 
-[https://github.com/dominikrappaport/leistungstests/blob/main/docs/weight.Rmd](https://github.com/dominikrappaport/leistungstests/blob/main/docs/weight.Rmd)
-3. [Analyse zum Anstieg auf den Jauerling](https://dominik-rappaport.shinyapps.io/FallstudieJauerling/) (mein Lieblingsanstieg), interkativ mit Hilfe von [https://shiny.posit.co/](https://shiny.posit.co/). Quellcode: [https://github.com/dominikrappaport/leistungstests/tree/main/shiny](https://github.com/dominikrappaport/leistungstests/tree/main/shiny)
-4. Diverse weitere Auswertungen im Ordner [src](https://github.com/dominikrappaport/leistungstests/tree/main/src). Die Ausgabe erfolgt dabei immer in den Ordner [output](https://github.com/dominikrappaport/leistungstests/tree/main/output)
+[weight.Rmd](https://github.com/dominikrappaport/leistungstests/blob/main/docs/weight.Rmd)
+3. [Analyse zum Anstieg auf den Jauerling](https://dominik-rappaport.shinyapps.io/FallstudieJauerling/) (mein Lieblingsanstieg), interkativ mit Hilfe von [https://shiny.posit.co/](https://shiny.posit.co/). Quellcode: [/shiny](https://github.com/dominikrappaport/leistungstests/tree/main/shiny)
+4. Diverse weitere Auswertungen im Ordner [/src](https://github.com/dominikrappaport/leistungstests/tree/main/src). Die Ausgabe erfolgt dabei immer in den Ordner [/output](https://github.com/dominikrappaport/leistungstests/tree/main/output)
 
 ## Schlussatz
 
