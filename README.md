@@ -12,10 +12,9 @@ muss ja für etwas gut gewesen sein 😂).
 
 Ich lade Daten aus verschiedenen Quellen:
 
-1. Garmin (Gewicht, Herzfrequenz, Bodybattery, Herzfrequenzvariabilität und Ruhepuls)
+1. Garmin (Gewicht, Herzfrequenz, Bodybattery, Herzfrequenzvariabilität und Ruhepuls) (zum Teil heruntergeladen mit [Garmindownloader](https://github.com/dominikrappaport/garmindownloader))
 2. TrainingPeaks bzw. WKO5 (CTL, ATL, TSS, TSB, Trainingsdauer und Gesundheitszustand)
-3. Komplette Ranglisten bestimmter Stravasegmente (heruntergeladen mit einem selbstentwickeltem 
-Programm, dem [SegmentDownloader](https://github.com/dominikrappaport/SegmentDownloader))
+3. Komplette Ranglisten bestimmter Stravasegmente (heruntergeladen mit [SegmentDownloader](https://github.com/dominikrappaport/SegmentDownloader))
 4. Aufzeichnugnen gemacht mit dem [Tymewear VitalPro strap](https://www.tymewear.com/).
 5. Rohdaten meiner Labortests (Sprioergometrie), gemacht bei [HPC St. Pölten](https://www.h-p-c.at/).
 
